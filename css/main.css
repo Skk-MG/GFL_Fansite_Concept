@@ -13,82 +13,6 @@ body {
     background-size: cover;
 }
 
-/*-----------------------------------------------------------------------*/   /* Senti la necesidad de agregar esta clase de aviso asique lo busque en internet y lo modifique para que se ajuste mas a lo que yo quiero */ 
-                                                                              /* Codigo original en https://codepen.io/sdindi/pen/yLRvqPP */
-.open-modal {
-    background: transparent;
-    border: none;
-    transition: all 0.3s;
-    outline: none;
-}
-
-.open-modal:active {
-    transform: translate(-50%, -50%);
-}
-
-.modal-content {
-    position: absolute;
-    background: #202020;
-    left: 50%;
-    top: 50%;
-    width: auto;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 99;
-    transform: translate(-50%, -50%);
-}
-  
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-    color: rgb(207, 12, 12);
-    font-size: 30px;
-}
-  
-.close-modal {
-    color: white;
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    width: 20px;
-    font-size: 40px; 
-}
-  
-.close-modal:hover {
-    color: #fa5252;
-}
-  
-.modal-body p {
-    font-size: 22px;
-    line-height: 1.5;
-    color: orange;
-}
-  
-.hidden-modal {
-    display: none;
-}
-  
-.blur-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
-    z-index: 1;
-}
-  
-.hidden-blur {
-    display: none;
-}
-
-/*-----------------------------------------------------------------------*/
-
 .hero {
     background-color: rgba(0, 0, 0, 0.9);
     border-bottom: 1px solid #666;
@@ -146,6 +70,65 @@ body {
 .cambiar__idioma.mobile {
     display: none;
 }
+
+.footer {                                      /* por algun motivo diabolico no puedo poner el margin en 0... como quieras CSS */
+    position: flex;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    height: 4rem;
+    width: 100vw;
+    padding-top: 10px;
+    border-top: 1px solid #666;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(230, 90, 10);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.footer__content i {
+    color: white;
+}
+
+.footer__links {                                /* por algun motivo diabolico el contenido de este elemento es mas grande de lo que deberia ser ?????... como quieras CSS */
+    display: flex;
+    gap: 3rem;
+    padding-left: 1rem;
+}
+
+.footer__links a:hover {
+    color: rgb(255, 238, 0);
+}
+
+.footer__sociales {
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+    color: white;
+    gap: 3rem;
+    font-size: 1.5rem;
+    padding: 0rem;
+}
+
+.footer__content i:hover {
+    color: rgb(230, 90, 10);
+}
+
+.mg {
+    padding-right: 1rem;
+}
+
+                                          /* -------------------------------------------------------------------------- */ 
+
+                                          /* -------------------------------- INDEX HTML ------------------------------ */
 
 .grid {
     display: grid;
@@ -212,66 +195,9 @@ body {
   transform: translateY(4px);
 }
 
-.footer {                                      /* por algun motivo diabolico no puedo poner el margin en 0... como quieras CSS */
-    position: flex;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    height: 4rem;
-    width: 100vw;
-    padding-top: 10px;
-    border-top: 1px solid #666;
-}
+                                            /* -------------------------------------------------------------------------- */ 
 
-.footer a {
-    text-decoration: none;
-    color: rgb(230, 90, 10);
-}
-
-.footer__content {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-}
-
-.footer__content i {
-    color: white;
-}
-
-.footer__links {                                /* por algun motivo diabolico el contenido de este elemento es mas grande de lo que deberia ser ?????... como quieras CSS */
-    display: flex;
-    gap: 3rem;
-    padding-left: 1rem;
-}
-
-.footer__links a {
-    padding-right: 1rem;
-}
-
-.footer__links a:hover {
-    color: rgb(255, 238, 0);
-}
-
-.footer__sociales {
-    display: flex;
-    list-style-type: none;
-    cursor: pointer;
-    color: white;
-    gap: 3rem;
-    font-size: 1.5rem;
-    padding: 0rem;
-}
-
-.footer__content i:hover {
-    color: rgb(230, 90, 10);
-}
-
-.mg {
-    padding-right: 1rem;
-}
-
-                  /*************************** LORE HTML ***************************/
+                                            /* -------------------------------- LORE HTML ------------------------------ */
 
 .grid__carrusel {
     display: grid;
@@ -359,11 +285,9 @@ body {
     width: 100%;
     height: 100%;
 }
-                    /*************************** ------ ***************************/
+                                    /* -------------------------------------------------------------------------- */ 
 
-
-
-                    /*************************** CONTACT HTML ***************************/
+                                   /* -------------------------------- CONTACT HTML ------------------------------ */
 
 .grid__form {
     display: grid;
@@ -396,9 +320,9 @@ body {
     width: 7rem;
 }
 
-                  /*************************** ------ ***************************/
+                                    /* -------------------------------------------------------------------------- */ 
 
-                  /*************************** COMMUNITY HTML ***************************/
+                                   /* -------------------------------- COMMUNITY HTML ------------------------------ */
 
 .grid__community {
     display: grid;
@@ -447,11 +371,9 @@ body {
     text-align: center;
 }
 
-                    /*************************** ------ ***************************/
+                                    /* -------------------------------------------------------------------------- */ 
 
-
-
-                    /*************************** CHARACTER HTML ***************************/
+                                   /* -------------------------------- CHARAS HTML ------------------------------ */
 
 .grid__chars {
     display: grid;
@@ -504,7 +426,84 @@ body {
     height: 15rem;
 }
 
-                  /*************************** ------ ***************************/
+                                            /* -------------------------------------------------------------------------- */ 
+
+                                            /* -------------------------------- ---------- ------------------------------ */  
+                                                                              
+.open-modal {                               /* Senti la necesidad de agregar esta clase de aviso... asique lo busque en internet y lo modifique para que se ajuste mas a lo que yo quiero */ /* Codigo original en https://codepen.io/sdindi/pen/yLRvqPP */ 
+    background: transparent;
+    border: none;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.open-modal:active {
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    position: absolute;
+    background: #202020;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+  
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    color: rgb(207, 12, 12);
+    font-size: 30px;
+}
+  
+.close-modal {
+    color: white;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    font-size: 40px; 
+}
+  
+.close-modal:hover {
+    color: #fa5252;
+}
+  
+.modal-body p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: orange;
+}
+  
+.hidden-modal {
+    display: none;
+}
+  
+.blur-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+  
+.hidden-blur {
+    display: none;
+}
+
+/*-----------------------------------------------------------------------*/
+
 
 @media screen and (max-width: 420px) {
 
@@ -584,7 +583,50 @@ body {
     .cerrar__menu {
         border: none;
     }
+
+    .footer {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        height: auto;
+    }
     
+    .footer a {
+        text-decoration: none;
+        color: rgb(230, 90, 10);
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .footer__links {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .footer__sociales {
+        display: flex;
+        flex-direction: row;
+
+        list-style-type: none;
+        cursor: pointer;
+        color: white;
+
+        gap: 4rem;
+        margin: 0rem;
+    }
+    
+    .footer__sociales i:hover {
+        color: rgb(230, 90, 10);
+    }
+
+    /*************************** INDEX HTML ***************************/
+
     .grid {
         display: flex;
         flex-direction: column;
@@ -647,46 +689,8 @@ body {
         transform: translateY(4px);
     }
 
-    .footer {
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.9);
-        color: white;
-        height: auto;
-    }
     
-    .footer a {
-        text-decoration: none;
-        color: rgb(230, 90, 10);
-    }
-
-    .footer__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    
-    .footer__links {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .footer__sociales {
-        display: flex;
-        flex-direction: row;
-
-        list-style-type: none;
-        cursor: pointer;
-        color: white;
-
-        gap: 4rem;
-        margin: 0rem;
-    }
-    
-    .footer__sociales i:hover {
-        color: rgb(230, 90, 10);
-    }
+    /*************************** --------- ***************************/
 
     /*************************** LORE HTML ***************************/
 
@@ -713,4 +717,6 @@ body {
     .lore__dump {
         margin-top: 1rem;
     }
+
+    /*************************** --------- ***************************/
 }
