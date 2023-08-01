@@ -401,16 +401,12 @@ body {
 
 .char__list li {
     list-style-type: none;
-    color: orange;
-    background-color: rgb(0, 0, 0);
-
-    text-align: center;
-    font-size: 2rem;
-
     gap: 1rem;
-    height: 10rem;
-    width: 10rem;
-    padding-top: 3rem;
+}
+
+.char__list img {
+    height: 12rem;
+    width: 100%;
 }
 
 .pholder {
