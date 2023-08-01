@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World | 少女前線</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <section class="hero">
+        <header class="hero__header">
+
+            <img class="logo" src="../img/logoPlaceholder2.png" alt="Griffin&Kryuger PMC logo">
+
+            <button id="abrir" class="abrir__menu"><i class="bi bi-list"></i></button>
+
+            <nav class="hero__nav" id="nav">
+                
+                <button id="cerrar" class="cerrar__menu"><i class="bi bi-x-lg"></i></button>
+
+                <ul class="nav__list">
+                    <li class="menu__item"><a href="../index.html">Home</a></li>
+                    <li class="menu__item"><a href="./charas.html">Character</a></li>
+                    <li class="menu__item"><a href="#">World</a></li>
+                    <li class="menu__item"><a href="./community.html">News & Community</a></li>
+                    <li class="menu__item"><a href="./contact.html">Contact</a></li>
+                    <button class="cambiar__idioma mobile"><i class="bi bi-translate"></i></button>
+                </ul>
+            </nav>
+
+            <button class="cambiar__idioma"><i class="bi bi-translate"></i></button>
+
+        </header>
+    </section>
+
+    <div class="modal-content hidden-modal">
+        <div class="modal-header">
+          <h3>- Disclaimer!</h3>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Girls Frontline is Copyright SUNBORN Network Technology Co., Ltd. All images and names owned and trademarked by SUNBORN Network Technology Co., Ltd. are property of SUNBORN Network Technology Co., Ltd.</p>
+        </div>
+    </div> 
+    
+    <div class="blur-bg hidden-blur"></div>
+
+    <main class="grid__carrusel">
+
+        <h1 class="titulo__pagina">WORLD<br>VIEW</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">           <!-- Problema de alturas cambiando solucionado con la ayuda de coderask --> <!-- Por algun motivo hay un ligero cambio como de un px en las slides 3 y 5... no se cual es el problema ahi -->
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    
+                    <img src="../img/Carrusel1.png" class="d-block w-100" alt="massive machine suspended in the air">
+                    <h1 class="titulo__carrusel">Discovery</h1>
+
+                    <section class="lore__dump 1">
+                        <p>Mankind's first contact with Collapse and Counter-Collapse technology could be traced back to the exploration of unknown life forms in 1905. People believed that such technology could completely revolutionize the world, but remained oblivious to its specific purpose...
+                        </p>
+                    </section>
+                </div>
+
+                <div class="carousel-item">
+                    
+                    <img src="../img/Carrusel2.png" class="d-block w-100" alt="destroyed city, contaminated">
+                    <h1 class="titulo__carrusel">Destruction</h1>
+
+                    <section class="lore__dump 2">
+                        <p>
+                        Until 2030, when a series of events (known as the First Beilan Island Incident) triggered by a few middle-schoolers' misadventures and a task force's misuse of explosives caused a large-scale leakage of Collapse Fluid and a chain detonation that vaporized 400,000,000 lives in an instant.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/Carrusel3.png" class="d-block w-100" alt="a city in ruins and engulfed by flames">
+                    <h1 class="titulo__carrusel">WW3</h1>
+
+                    <section class="lore__dump 3">
+                        <p>Unprecedented catastrophe spread like wildfire throughout the planet, breaking the fragile balance of peace. Until, eventually, it reached a critical point. In 2045, amidst the strife for unpolluted land and food sources - mankind's most innocent and barbaric motive for anything - World War III broke out.</p>
+                    </section>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/Carrusel4.png" class="d-block w-100" alt="a doll salutes">
+                    <h1 class="titulo__carrusel">Post-War</h1>
+
+                    <section class="lore__dump 4">
+                        <p>The world was further devastated after the war. Order and civilization were all but extinct, and sovereignties could no longer ensure the safety of their people. Meanwhile, mechanical technology had seen many breakthroughs due to the war, introducing Dolls to mankind.
+                            
+                        Dolls look no different than regular humans, but possess mechanical bodies that are far superior. Beneath their convincing charade of emotional display, they are essentially cheap life that could be made with nothing but money and resources to replace that which was lost.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/Carrusel5.png" class="d-block w-100" alt="kryuger hands the player a weapon">
+                    <h1 class="titulo__carrusel">Hope</h1>
+
+                    <section class="lore__dump 5">
+                        <p>Still, they are much more dependable than most human beings in such troubled times, not just because of their incredible efficiency in executing orders, but also because of their pure "souls", which dissentients brush off as “mere programs”.
+
+                        Nevertheless, this technology has allowed for old grudges and hate to rekindle among old foes. As PMCs now ride the wave of new Tactical Doll and military tech and chaos breaks anew, a new Commander arrives to Griffin & Kryuger's base, unknowing  of what the future has in store for them...
+                        </p>
+                    </section>
+                </div>
+
+                <div class="carousel-item video">              <!-- Woah todas las soluciones para cambiar el thumbnail son un dolor de cabeza, eeeh supongo que es un problema para cuando sepa mas -->
+                    <section class="trailer__title">
+                        <h1>- Trailer -</h1>
+                    </section>
+
+                    <div class="trailer__vid">
+                        <iframe class="responsive-iframe" title="original game trailer" width="884" height="498" src="https://www.youtube.com/embed/z4SIKV2G0sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+
+            <div class="footer__links">
+                <a href="#">About Us</a>
+                <a href="./contact.html">Contact</a>
+                <a href="#">Placeholder</a>
+            </div>
+
+            <ul class="footer__sociales">
+                <li><a href="https://twitter.com/GirlsFrontlineE" role="button"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://youtube.com/@girls-frontlinemica-team2792" role="button"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="https://discord.gg/gfen" role="button"><i class="bi bi-discord"></i></a></li>
+                <li><button class="open-modal"><i class="bi bi-c-circle"></i></button></li>
+            </ul>
+
+            <div class="mg">
+                <p style="color: aliceblue;">@Fan site by Martin Garcia | 2023</p>
+            </div>
+
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
