@@ -1,0 +1,30 @@
+.grid__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "form ."
+    ". msg";
+    padding: 1rem;
+
+    .bootstrap__form {
+        grid-area: form;
+        color: white;
+        font-family: $fuenteTexto;
+    }
+
+    .personal__msg {
+        padding-top: 14.6rem;
+        grid-area: msg;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: end;
+        color: rgb(142, 76, 207);
+
+        img {
+            height: 7rem;
+            width: 7rem;
+        }
+    }
+}

@@ -11,7 +11,7 @@ cerrar.addEventListener("click", () => {
 })
 
 
-let modalContent = document.querySelector(".modal-content");              // mas info en documento CSS
+let modalContent = document.querySelector(".modal-content");              
 let openModal = document.querySelector(".open-modal");
 let closeModal = document.querySelector(".close-modal");
 let blurBg = document.querySelector(".blur-bg");

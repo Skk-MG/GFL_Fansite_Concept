@@ -1,0 +1,46 @@
+.grid__community {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "placeholder paginas"
+    "placeholder paginas";
+    padding: 2rem;
+    gap: 2rem;
+
+    .list__community {
+        grid-area: paginas;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+
+        li {
+            font-family: $fuenteTitulo;
+            font-size: 1.5rem;
+            list-style-type: none;
+            border: 2px double $colorPrincipal;
+            padding-left: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: orange;
+
+            &:hover {
+                color: $colorHover;
+            }
+        }
+    }
+
+    .placeholder__stuff p {
+        grid-area: placeholder;
+        background-color: #666;
+        color: rgb(202, 30, 30);
+        font-weight: bold;
+        font-size: 2rem;
+        padding-bottom: 61.5vh;
+    
+        text-align: center;
+    }
+}

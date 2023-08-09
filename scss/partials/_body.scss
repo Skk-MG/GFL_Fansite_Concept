@@ -1,0 +1,79 @@
+body {
+    background-image: url(../img/placeholderBG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: cover;
+
+    .open-modal {                                /* Codigo original en https://codepen.io/sdindi/pen/yLRvqPP */ 
+        background: transparent;
+        border: none;
+        transition: all 0.3s;
+        outline: none;
+
+        &:active {
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    .modal-content {
+        position: absolute;
+        background: #202020;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 99;
+        transform: translate(-50%, -50%);
+    }
+      
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        color: rgb(207, 12, 12);
+        font-size: 30px;
+    }
+      
+    .close-modal {
+        color: white;
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        font-size: 40px; 
+
+        &:hover {
+            color: $colorHover;
+        } 
+    }
+      
+    .modal-body p {
+        font-size: 22px;
+        line-height: 1.5;
+        color: orange;
+    }
+      
+    .hidden-modal {
+        display: none;
+    }
+      
+    .blur-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+      
+    .hidden-blur {
+        display: none;
+    }
+}
