@@ -1,12 +1,9 @@
 .footer {                                     
-    position: flex;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0,);
     color: white;
-    height: 4rem;
-    width: 100%;
     padding-top: 10px;
     border-top: 1px solid #666;
+    width: 100%;
 
     a {
         text-decoration: none;
@@ -40,10 +37,10 @@
 
             i {
                 color: white;
-            }
-        
-            i:hover {
-                color: $colorHover;
+
+                &:hover {
+                    color: $colorHover;
+                }
             }
         }
 

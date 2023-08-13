@@ -14,9 +14,10 @@
 <body>
 
     <section class="hero">
+
         <header class="hero__header">
 
-            <img class="logo" src="../img/logoPlaceholder2.png" alt="Griffin&Kryuger PMC logo">
+            <a href="../index.html"><img class="logo" src="../img/mainLogo.png" alt="Griffin&Kryuger PMC logo"></a>
 
             <button id="abrir" class="abrir__menu"><i class="bi bi-list"></i></button>
 
@@ -37,55 +38,68 @@
             <button class="cambiar__idioma"><i class="bi bi-translate"></i></button>
 
         </header>
+
     </section>
 
     <div class="modal-content hidden-modal">
+
         <div class="modal-header">
           <h3>- Disclaimer!</h3>
           <button class="close-modal">&times;</button>
         </div>
+
         <div class="modal-body">
           <p>Girls Frontline is Copyright SUNBORN Network Technology Co., Ltd. All images and names owned and trademarked by SUNBORN Network Technology Co., Ltd. are property of SUNBORN Network Technology Co., Ltd.</p>
         </div>
+
     </div> 
     
     <div class="blur-bg hidden-blur"></div>
 
-    <main class="grid__form">
+    <main class="bootstrap__form">
 
-        <form class="bootstrap__form">                               
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" disabled>
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message..." cols="50" rows="7" disabled></textarea>
-            </div>
-
-            <!-- <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-primary">Reset</button>
-        </form>
-
-        <div class="personal__msg">
-            <h2>- Made with love by MG</h2>
-            <img src="../img/withluv.png" alt="cube with a pink heart on it(AKA a company cube)">
+        <div class="form__title">
+            <h1>CONTACT ME</h1>
+            <p>Got any ideas, suggestions or comments? <span>or think you are a know-it-all and want to point out any mistakes</span> Feel free to contact me Commander~ I'll get back at you as soon as possible.</p>
         </div>
+
+        <section class="form__bg">
+
+            <form class="form__placement">
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Your name" required>
+                    <label for="floatingTextarea">Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 150px" required></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                
+
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-primary" value="Reset">
+
+            </form>
+
+        </section>
+
     </main>
 
     <footer class="footer">
+
         <div class="footer__content">
 
             <div class="footer__links">
-                <a href="#">About Us</a>
+                <a href="#">About Me</a>
                 <a href="#">Contact</a>
-                <a href="#">Placeholder</a>
+                <a href="#">Gallery</a>
             </div>
 
             <ul class="footer__sociales">
@@ -96,10 +110,11 @@
             </ul>
 
             <div class="mg">
-                <p style="color: aliceblue;">@Fan site by Martin Garcia | 2023</p>
+                <p style="color: aliceblue;">@Fan site by MG | 2023</p>
             </div>
 
         </div>
+        
     </footer>
     
     <script src="../js/main.js"></script>

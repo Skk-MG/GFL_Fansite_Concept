@@ -8,39 +8,96 @@
     padding: 2rem;
     gap: 2rem;
 
-    .list__community {
-        grid-area: paginas;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 2rem;
+    .twatter__iframe {
 
-        li {
-            font-family: $fuenteTitulo;
-            font-size: 1.5rem;
-            list-style-type: none;
-            border: 2px double $colorPrincipal;
-            padding-left: 1rem;
-        }
+        .titulo__pagina{
+            padding: 1rem;
+            width: 80%;
 
-        a {
-            text-decoration: none;
-            color: orange;
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 600;
+                font-family: $fuenteTitulo;
+                color: $colorPrincipal;
+            }
 
-            &:hover {
-                color: $colorHover;
+            p {
+                font-family: $fuenteTexto;
+                color: white;
+                font-size: 2rem;
             }
         }
     }
 
-    .placeholder__stuff p {
-        grid-area: placeholder;
-        background-color: #666;
-        color: rgb(202, 30, 30);
-        font-weight: bold;
-        font-size: 2rem;
-        padding-bottom: 61.5vh;
-    
-        text-align: center;
+    .list__community {
+        grid-area: paginas;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "gfl gfl"
+        "gp  gp"
+        "wiki wiki"
+        "mats mats"
+        "gfc gfc";
+        gap: 2rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+
+        .gfl {
+            grid-area: gfl;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .gp {
+            grid-area: gp;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .wiki {
+            grid-area: wiki;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .mats {
+            grid-area: mats;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .gfc {
+            grid-area: gfc;
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            border: 2px solid $colorSecundario;
+            border-radius: 1rem;
+        }
+
+        .pag__desc {
+            padding: 1rem;
+            
+            h2 {
+                font-family: $fuenteTitulo;
+                color: $colorPrincipal;
+
+                &:hover {
+                    color: $colorHover;
+                    text-shadow: 2px 2px 4px $colorPrincipal;
+                }
+            }
+
+            p {
+                font-family: $fuenteTexto;
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+
     }
 }

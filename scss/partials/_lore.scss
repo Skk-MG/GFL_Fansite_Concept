@@ -3,17 +3,34 @@
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    ". carrusel .";
+    ". carrusel carrusel";
     padding: 2rem;
     padding-top: 3rem;
 
-    .titulo__pagina {
-        font-size: 3.5rem;
-        font-weight: 600;
-        font-family: $fuenteTitulo;
-        color: $colorPrincipal;
-        width: max-content;
-        height: max-content;
+    .lore__title {
+        
+        .titulo__pagina {
+            font-size: 3.5rem;
+            font-weight: 600;
+            font-family: $fuenteTitulo;
+            color: $colorPrincipal;
+        }
+    
+        .desc__pagina {
+            padding-top: 2rem;
+            color: white;
+            font-family: $fuenteTexto;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.5;
+            width: 80%;
+
+            span {
+                color: red;
+                text-decoration: line-through;
+            }
+        }
     }
 
     #carouselExampleIndicators {
@@ -41,23 +58,21 @@
                 }
     
                 p {
-                    height: 10rem;
+                    height: 7rem;
                     padding: 0.5rem;
-                    line-height: 1.6;
+                    line-height: 1.4;
                     background-color: rgba(51, 51, 51, 0.6);
                     border: 2px solid $colorPrincipal;
                     color: $colorPrincipal;
                     font-weight: bold;
+                    font-size: 1.1rem;
+                    margin-bottom: 1.5rem;
                 }
 
                 .lore__dump {
                     padding-bottom: 0.5rem;
                     color: white;
                     font-family: $fuenteTexto;
-                }
-    
-                .video {
-                    height: 43.2rem;
                 }
                  
                 .trailer__title {
@@ -68,7 +83,7 @@
                 
                 .trailer__vid {                       
                     position: relative;               
-                    overflow: hidden;
+                    // overflow: hidden;
                     width: 100%;
                     padding-top: 56.25%;
                     margin-bottom: 2rem;
