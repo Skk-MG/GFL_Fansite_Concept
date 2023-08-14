@@ -9,48 +9,122 @@
         padding-bottom: 0.5rem;
         justify-content: space-between;
 
-        .nav__list {
+        @include mobile {
             display: flex;
-            list-style-type: none;
-            gap: 1rem;
-            margin-right: 3rem;
-
-            a {
-                text-decoration: none;
-                color: $colorPrincipal;
-
-                &:hover {
-                    @include hovercolor;
-                }
-            }
-
-            .menu__item {
-                font-family: $fuenteTitulo;
-                letter-spacing: 3px;
-                border-bottom: solid thick $colorPrincipal;
-                padding: 20px 20px 20px 20px;
-                font-size: 2rem;
-            }
-            
-            .cambiar__idioma.mobile {
-                display: none;
-            }    
+            flex-direction: row;    
+            width: 100%;     
         }
+
+        .hero__nav {
+
+            @include mobile {
+                opacity: 0;
+                visibility: hidden;           
+        
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: black;
+                padding: 1rem;
+                padding-bottom: 0;
+                box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+                z-index: 1;
+            }
+
+            .nav__list {
+                display: flex;
+                list-style-type: none;
+                gap: 1rem;
+                margin-right: 3rem;
+
+                @include mobile {
+                    flex-direction: column;
+                    align-items: end;    
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: $colorPrincipal;
+    
+                    &:hover {
+                        @include hovercolor;
+                    }
+                }
+    
+                .menu__item {
+                    font-family: $fuenteTitulo;
+                    letter-spacing: 3px;
+                    border-bottom: solid thick $colorPrincipal;
+                    padding: 20px 20px 20px 20px;
+                    font-size: 2rem;
+
+                    @include mobile {
+                        letter-spacing: 2px;
+                        border-bottom: 2px solid orange;
+                        font-size: 1.4rem;
+                        padding: 0.5rem;  
+                    }
+                }
+                
+                .cambiar__idioma.mobile {
+                    display: none;
+
+                    @include mobile {
+                        display: block;
+                        font-size: 1.8rem;
+                        background-color: transparent;
+                        border: 0;
+                        padding: 0.5rem;
+                        cursor: pointer;
+                        color: white; 
+                    }
+                }    
+            }
+        } 
 
         .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
-
+    
         @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
-
+    
         .logo {
             max-width: 15rem;
+    
+            @include mobile {
+                max-width: 8rem;
+            }
         }
-    }
 
-    .abrir__menu,
-        .cerrar__menu {
-            display: none;
+        .hero__nav.visible {
+
+            @include mobile {
+                opacity: 1;
+                visibility: visible;
+            }
         }
         
+        .abrir__menu,
+        .cerrar__menu {
+            display: none;
+    
+            @include mobile {
+                display: block;
+                border-radius: 5px;
+                padding: 1px;
+                font-size: 2rem;
+                cursor: pointer;
+        
+                border: 1px solid white;
+                color: white;
+                background-color: transparent;
+            }
+        }
+
+        .cerrar__menu {
+            @include mobile {
+                border: none;
+            }
+        }
+            
         .cambiar__idioma {
             font-size: 2rem;
             background-color: transparent;
@@ -58,5 +132,11 @@
             padding: 1rem;
             cursor: pointer;
             color: white;
+    
+            @include mobile {
+                display: none;
+            }
         }
+    }
+
 }
