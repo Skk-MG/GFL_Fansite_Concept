@@ -20,7 +20,7 @@
                 color: $colorPrincipal;
 
                 &:hover {
-                    color: $colorHover;
+                    @include hovercolor;
                 }
             }
 

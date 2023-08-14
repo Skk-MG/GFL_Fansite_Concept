@@ -10,26 +10,23 @@
     .lore__title {
         
         .titulo__pagina {
-            font-size: 3.5rem;
-            font-weight: 600;
-            font-family: $fuenteTitulo;
-            color: $colorPrincipal;
+            @include titulo_pag;    
         }
+        
+        @include title_expand;
     
         .desc__pagina {
-            padding-top: 2rem;
             color: white;
             font-family: $fuenteTexto;
             font-size: 1.5rem;
             font-weight: bold;
             font-style: italic;
             line-height: 1.5;
+            
+            padding-top: 2rem;
             width: 80%;
 
-            span {
-                color: red;
-                text-decoration: line-through;
-            }
+            @include spanstyle;
         }
     }
 
@@ -58,26 +55,26 @@
                 }
     
                 p {
-                    height: 7rem;
-                    padding: 0.5rem;
-                    line-height: 1.4;
-                    background-color: rgba(51, 51, 51, 0.6);
-                    border: 2px solid $colorPrincipal;
                     color: $colorPrincipal;
+                    background-color: rgba(51, 51, 51, 0.6);
                     font-weight: bold;
                     font-size: 1.1rem;
+                    line-height: 1.4;
+                    border: 2px solid $colorPrincipal;
+
+                    height: 7rem;
+                    padding: 0.5rem;
                     margin-bottom: 1.5rem;
                 }
 
                 .lore__dump {
-                    padding-bottom: 0.5rem;
                     color: white;
                     font-family: $fuenteTexto;
+                    padding-bottom: 0.5rem;
                 }
                  
                 .trailer__title {
-                    font-family: $fuenteTitulo;
-                    color: $colorPrincipal;
+                    @include titulo_pag;
                     text-align: center;
                 }
                 

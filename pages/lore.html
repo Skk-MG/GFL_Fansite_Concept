@@ -7,13 +7,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../scss/styles.css">
 
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 <body>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
 
         <header class="hero__header">
 
@@ -59,8 +60,8 @@
     <main class="grid__carrusel">
 
         <div class="lore__title">
-            <h1 class="titulo__pagina">WORLD</h1>
-            <h1 class="titulo__pagina">VIEW</h1>
+            <h1 class="titulo__pagina tracking-in-expand">WORLD</h1>
+            <h1 class="titulo__pagina tracking-in-expand">VIEW</h1>
 
             <p class="desc__pagina">Found a neat little summary of the current world affairs just in case you needed it. And I even did it for free! Ain't I the best Commander? <br><span>Thank goodness for the history nerds who write these</span></p>
         </div>
@@ -160,7 +161,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         
         <div class="footer__content">
 
@@ -171,10 +172,10 @@
             </div>
 
             <ul class="footer__sociales">
-                <li><a href="https://twitter.com/GirlsFrontlineE" role="button"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="https://youtube.com/@girls-frontlinemica-team2792" role="button"><i class="bi bi-youtube"></i></a></li>
-                <li><a href="https://discord.gg/gfen" role="button"><i class="bi bi-discord"></i></a></li>
-                <li><button class="open-modal"><i class="bi bi-c-circle"></i></button></li>
+                <li><a class="socLink" href="https://youtube.com/@girls-frontlinemica-team2792" target="_blank" role="button" data-texto="Official Youtube Channel"><i class="bi bi-youtube"></i></a></li>
+                <li><a class="socLink" href="https://twitter.com/GirlsFrontlineE" target="_blank" role="button" data-texto="Official Twitter"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="socLink" href="https://discord.gg/gfen" target="_blank" role="button" data-texto="Official Community Discord"><i class="bi bi-discord"></i></a></li>
+                <li><button class="open-modal socLink" data-texto="Copyright Disclaimer"><i class="bi bi-c-circle"></i></button></li>
             </ul>
 
             <div class="mg">
@@ -185,6 +186,7 @@
     </footer>
     
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script> AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>

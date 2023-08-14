@@ -10,35 +10,33 @@
         grid-area: titulo;
         
         h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            font-family: $fuenteTitulo;
-            color: $colorPrincipal;
+            @include titulo_pag;
         }
 
+        @include title_expand;
+
         p {
-            padding-top: 2rem;
             color: white;
             font-family: $fuenteTexto;
             font-size: 1.5rem;
             font-weight: bold;
             font-style: italic;
             line-height: 1.5;
+            padding-top: 2rem;
             width: 80%;
 
-            span {
-                color: red;
-                text-decoration: line-through;
-            }
+            @include spanstyle;
         }
     }
 
     .form__bg {
         grid-area: form;
+        
         background-image: url(../../img/OPS5_Y.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+
         padding: 6.5rem 10rem 6.5rem 10rem;
         border: 2px solid white;
         border-radius: 2rem;

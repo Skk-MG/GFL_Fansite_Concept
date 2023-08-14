@@ -7,13 +7,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../scss/styles.css">
 
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 <body>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
 
         <header class="hero__header">
 
@@ -58,13 +59,13 @@
 
     <main class="hero__chars">
 
-        <h1 class="titulo__pagina chars">CHARACTER INTRO</h1>
+        <h1 class="titulo__pagina chars tracking-in-expand">CHARACTER INTRO</h1>
 
         <ul class="faction__list">
-            <li class="faction__item1"><img src="../img/AR_logo.png" alt=""></li>
-            <li class="faction__item2"><img src="../img/404_logo.png" alt=""></li>
-            <li class="faction__item3"><img src="../img/GK_logo.png" alt=""></li>
-            <li class="faction__item4"><img src="../img/16LAB_logo.png" alt=""></li>
+            <li class="faction__item1"><img class="slide-in-fwd-center" src="../img/AR_logo.png" alt=""></li>
+            <li class="faction__item2"><img class="slide-in-fwd-center" src="../img/404_logo.png" alt=""></li>
+            <li class="faction__item3"><img class="slide-in-fwd-center" src="../img/GK_logo.png" alt=""></li>
+            <li class="faction__item4"><img class="slide-in-fwd-center" src="../img/16LAB_logo.png" alt=""></li>
         </ul>
 
         <section class="grid__doll">
@@ -115,7 +116,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
 
         <div class="footer__content">
 
@@ -126,10 +127,10 @@
             </div>
 
             <ul class="footer__sociales">
-                <li><a href="https://twitter.com/GirlsFrontlineE" role="button"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="https://youtube.com/@girls-frontlinemica-team2792" role="button"><i class="bi bi-youtube"></i></a></li>
-                <li><a href="https://discord.gg/gfen" role="button"><i class="bi bi-discord"></i></a></li>
-                <li><button class="open-modal"><i class="bi bi-c-circle"></i></button></li>
+                <li><a class="socLink" href="https://youtube.com/@girls-frontlinemica-team2792" target="_blank" role="button" data-texto="Official Youtube Channel"><i class="bi bi-youtube"></i></a></li>
+                <li><a class="socLink" href="https://twitter.com/GirlsFrontlineE" target="_blank" role="button" data-texto="Official Twitter"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="socLink" href="https://discord.gg/gfen" target="_blank" role="button" data-texto="Official Community Discord"><i class="bi bi-discord"></i></a></li>
+                <li><button class="open-modal socLink" data-texto="Copyright Disclaimer"><i class="bi bi-c-circle"></i></button></li>
             </ul>
 
             <div class="mg">
@@ -141,6 +142,7 @@
     </footer>
     
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script> AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>

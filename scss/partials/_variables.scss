@@ -3,3 +3,50 @@ $colorSecundario: rgb(230, 90, 10);
 $colorHover: rgb(255, 238, 0);
 $fuenteTitulo: 'Tektur', cursive;
 $fuenteTexto: 'Roboto', sans-serif;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin titulo_pag {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: $fuenteTitulo;
+    color: $colorPrincipal;
+}
+
+@mixin title_h2 {
+    font-family: $fuenteTitulo;
+    color: $colorPrincipal;
+    text-shadow: 1px 1px 3px $colorPrincipal;
+}
+
+@mixin hovercolor {
+    color: $colorHover;
+    text-shadow: 2px 2px 4px $colorPrincipal;
+}
+
+@mixin spanstyle {
+    span {
+        text-decoration: line-through;
+        color: red;
+    }
+}
+
+@mixin imgslide($delay) {
+    .slide-in-fwd-center{animation:slide-in-fwd-center .5s cubic-bezier(.25,.46,.45,.94) $delay both}
+
+    @keyframes slide-in-fwd-center{0%{transform:translateZ(-1400px);opacity:0}100%{transform:translateZ(0);opacity:1}}
+}
+
+@mixin title_expand {
+    .tracking-in-expand{animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+   
+    @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+}

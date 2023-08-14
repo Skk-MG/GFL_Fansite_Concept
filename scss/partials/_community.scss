@@ -15,15 +15,14 @@
             width: 80%;
 
             h1 {
-                font-size: 3.5rem;
-                font-weight: 600;
-                font-family: $fuenteTitulo;
-                color: $colorPrincipal;
+                @include titulo_pag;
             }
 
+            @include title_expand;
+
             p {
-                font-family: $fuenteTexto;
                 color: white;
+                font-family: $fuenteTexto;
                 font-size: 2rem;
             }
         }
@@ -44,34 +43,39 @@
         margin-right: 1rem;
         margin-bottom: 1rem;
 
-        .gfl {
-            grid-area: gfl;
+        %flexrow {
             display: flex;
             flex-direction: row;
+        }
+
+        %flexrowrev {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .gfl {
+            grid-area: gfl;
+            @extend %flexrow;
         }
 
         .gp {
             grid-area: gp;
-            display: flex;
-            flex-direction: row-reverse;
+            @extend %flexrowrev
         }
 
         .wiki {
             grid-area: wiki;
-            display: flex;
-            flex-direction: row;
+            @extend %flexrow;
         }
 
         .mats {
             grid-area: mats;
-            display: flex;
-            flex-direction: row-reverse;
+            @extend %flexrowrev
         }
 
         .gfc {
             grid-area: gfc;
-            display: flex;
-            flex-direction: row;
+            @extend %flexrow;
         }
 
         img {
@@ -93,8 +97,8 @@
             }
 
             p {
-                font-family: $fuenteTexto;
                 color: white;
+                font-family: $fuenteTexto;
                 font-size: 1.5rem;
             }
         }

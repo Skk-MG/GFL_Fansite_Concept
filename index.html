@@ -7,13 +7,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./scss/styles.css">
 
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
 
         <header class="hero__header">
 
@@ -59,12 +60,12 @@
     <main class="grid">
 
         <div class="grid__item1">      
-            <h1 class="titulo">Welcome to the Frontline</h1>
-            <h2 class="titulo">Commander~</h2>
+            <h1 class="titulo text-flicker-in-glow">Welcome to the Frontline</h1>
+            <h2 class="titulo text-flicker-in-glow">Commander~</h2>
         </div>
 
         <div class="grid__item2">
-            <h2>>'Sup Commander, allow me to introduce you to this world</h2>
+            <h2 class="typewriter">>'Sup Commander, allow me, 45, to introduce you to this world</h2>
 
             <p>Girls' Frontline, AKA 少女前线 or Doll's Frontline is a turn-based strategy game with gacha and resources management components for Apple and Android smartphones developed by Sunborn, with technology from Criware and Live2D, soundtrack by Vanguard Sound and animated sequences by Liverless. The game first released in May 20, 2016.</p>
                 
@@ -72,13 +73,14 @@
         </div>
 
         <div class="grid__item3">
-            <button onclick="window.location.href='#';" class="boton"><img src="./img/ANDROID.png" alt=""></button>   
-            <button onclick="window.location.href='#';" class="boton"><img src="./img/IOS.png" alt=""></button>
+            <h2 class="heartbeat">Download here!</h2>
+            <button onclick="window.location.href='https:play.google.com/store/apps/details?id=com.sunborn.girlsfrontline.en';" class="boton"><img src="./img/ANDROID.png" alt=""></button>   
+            <button onclick="window.location.href='https:apps.apple.com/us/app/girls-frontline/id1313126006?l=zh&ls=1';" class="boton"><img src="./img/IOS.png" alt=""></button>
         </div>
 
     </main>
     
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
 
         <div class="footer__content">
 
@@ -89,10 +91,10 @@
             </div>
 
             <ul class="footer__sociales">
-                <li><a href="https://twitter.com/GirlsFrontlineE" role="button"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="https://youtube.com/@girls-frontlinemica-team2792" role="button"><i class="bi bi-youtube"></i></a></li>
-                <li><a href="https://discord.gg/gfen" role="button"><i class="bi bi-discord"></i></a></li>
-                <li><button class="open-modal"><i class="bi bi-c-circle"></i></button></li>
+                <li><a class="socLink" href="https://youtube.com/@girls-frontlinemica-team2792" target="_blank" role="button" data-texto="Official Youtube Channel"><i class="bi bi-youtube"></i></a></li>
+                <li><a class="socLink" href="https://twitter.com/GirlsFrontlineE" target="_blank" role="button" data-texto="Official Twitter"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="socLink" href="https://discord.gg/gfen" target="_blank" role="button" data-texto="Official Community Discord"><i class="bi bi-discord"></i></a></li>
+                <li><button class="open-modal socLink" data-texto="Copyright Disclaimer"><i class="bi bi-c-circle"></i></button></li>
             </ul>
 
             <div class="mg">
@@ -104,6 +106,7 @@
     </footer>
     
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script> AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>

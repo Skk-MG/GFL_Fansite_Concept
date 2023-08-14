@@ -8,6 +8,18 @@
     a {
         text-decoration: none;
         color: $colorSecundario;
+
+        &:hover {
+            @include hovercolor;
+        }
+    }
+
+    i {
+        color: white;
+
+        &:hover {
+            @include hovercolor;
+        }
     }
 
     .footer__content {
@@ -20,10 +32,6 @@
             display: flex;
             gap: 3rem;
             padding-left: 1rem;
-
-            a:hover {
-                color: $colorHover;
-            }
         }
 
         .footer__sociales {
@@ -34,18 +42,37 @@
             gap: 3rem;
             font-size: 1.5rem;
             padding: 0rem;
-
-            i {
-                color: white;
-
-                &:hover {
-                    color: $colorHover;
-                }
-            }
         }
 
         .mg {
             padding-right: 1rem;
         }
     }
+
+    .socLink {
+        position: relative;
+
+        &::before {
+            content: attr(data-texto);
+            position: absolute;
+            bottom: 100%;
+            background-color: black;
+            font-weight: 400;
+            font-size: 0.8rem;
+            text-shadow: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            color: white;
+    
+            transform: scale(0);
+            transform-origin: bottom left;
+    
+            transition: 0.15s;
+        }
+    
+        &:hover::before {
+            transform: scale(1);
+        }
+    }
+
 }
