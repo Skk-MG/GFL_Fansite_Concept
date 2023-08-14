@@ -37,6 +37,10 @@
             }    
         }
 
+        .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+
+        @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
         .logo {
             max-width: 15rem;
         }

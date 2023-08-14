@@ -6,6 +6,10 @@ body {
     background-attachment: local;
     background-size: 20%;
 
+    a {
+        cursor: pointer;
+    }
+
     .open-modal {                                /* Codigo original en https://codepen.io/sdindi/pen/yLRvqPP */ 
         background: transparent;
         border: none;

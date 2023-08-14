@@ -28,15 +28,13 @@
             }
         }
 
-        .faction__item1 {
-            @include imgslide(0.5s);
+        @include imgslide(0.5s);
 
-            &::after {
-                content: url(../../img/wheel.gif);
-                position: absolute;
-            }
+        .faction__item1::after {
+            content: url(../../img/wheel.gif);
+            position: absolute;
         }
-        
+       
         .faction__item2 {
             @include imgslide(1s);
         }
@@ -96,7 +94,7 @@
                     margin: 0;
                 }
             }
-
+            
             .M4 {
                 position: relative;
                 
@@ -107,6 +105,10 @@
                 }
             }
         }
+
+        .slide-in-bottom{animation:slide-in-bottom 1.2s cubic-bezier(.25,.46,.45,.94) both}
+
+        @keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
     
         .doll__desc {
             @include flex-row;
@@ -117,7 +119,7 @@
 
             border: 2px solid rgb(5, 114, 117);
             border-radius: 1rem;
-    
+
             .doll__text {
                 padding: 0.5rem;
 
