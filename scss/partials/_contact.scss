@@ -29,10 +29,14 @@
         }
     }
 
+    .fade-in{animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) 1s both}
+
+    @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
     .form__bg {
         grid-area: form;
         
-        background-image: url(../../img/OPS5_Y.webp);
+        background-image: url(../../img/black-whiteBG.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -42,6 +46,10 @@
         border-radius: 2rem;
         box-shadow: 6px 6px 4px #666;
         margin: 2.3rem 0;
+
+        .scale-in-center{animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 2s both}
+    
+        @keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
 
         .form__placement {
             background-color: #19191f;

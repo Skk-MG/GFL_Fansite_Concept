@@ -21,6 +21,7 @@
         li {
             list-style-type: none;
             gap: 1rem;
+            cursor: pointer;
             
             img {
                 height: 11rem;
@@ -31,7 +32,7 @@
         @include imgslide(0.5s);
 
         .faction__item1::after {
-            content: url(../../img/wheel.gif);
+            content: url(../../img/selectedWheel.gif);
             position: absolute;
         }
        
@@ -62,10 +63,11 @@
                 @include flex-row;
                 align-items: center;
                 height: max-content;
+                cursor: pointer;
                 
                 width: 380px;
                 margin: 0 0 0.5rem 1rem;
-                background-image: url(../../img/backgroundd.webp);
+                background-image: url(../../img/profileBackground.webp);
 
                 &:hover {
                     p {
@@ -99,7 +101,7 @@
                 position: relative;
                 
                 &::before {
-                    content: url(../../img/wheel.gif);
+                    content: url(../../img/selectedWheel.gif);
                     position: absolute;
                     right: calc(100% +  1rem);
                 }
@@ -123,14 +125,15 @@
             .doll__text {
                 padding: 0.5rem;
 
+                &:hover h2 {
+                    @include hovercolor;
+                }
+
                 h2 {
                     color: $colorPrincipal;
                     font-family: $fuenteTitulo;
                     font-style: italic;
 
-                    &:hover {
-                        @include hovercolor;
-                    }
                 }
 
                 p {

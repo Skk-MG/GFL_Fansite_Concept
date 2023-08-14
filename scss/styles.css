@@ -446,6 +446,7 @@ body .hidden-blur {
 .hero__chars .faction__list li {
   list-style-type: none;
   gap: 1rem;
+  cursor: pointer;
 }
 .hero__chars .faction__list li img {
   height: 11rem;
@@ -465,7 +466,7 @@ body .hidden-blur {
   }
 }
 .hero__chars .faction__list .faction__item1::after {
-  content: url(../../img/wheel.gif);
+  content: url(../../img/selectedWheel.gif);
   position: absolute;
 }
 .hero__chars .faction__list .faction__item2 .slide-in-fwd-center {
@@ -523,9 +524,10 @@ body .hidden-blur {
   align-items: center;
   height: -moz-max-content;
   height: max-content;
+  cursor: pointer;
   width: 380px;
   margin: 0 0 0.5rem 1rem;
-  background-image: url(../../img/backgroundd.webp);
+  background-image: url(../../img/profileBackground.webp);
 }
 .hero__chars .grid__doll .char__ARteam .doll:hover p {
   color: rgb(255, 238, 0);
@@ -552,7 +554,7 @@ body .hidden-blur {
   position: relative;
 }
 .hero__chars .grid__doll .char__ARteam .M4::before {
-  content: url(../../img/wheel.gif);
+  content: url(../../img/selectedWheel.gif);
   position: absolute;
   right: calc(100% + 1rem);
 }
@@ -582,14 +584,14 @@ body .hidden-blur {
 .hero__chars .grid__doll .doll__desc .doll__text {
   padding: 0.5rem;
 }
+.hero__chars .grid__doll .doll__desc .doll__text:hover h2 {
+  color: rgb(255, 238, 0);
+  text-shadow: 2px 2px 4px rgb(255, 166, 0);
+}
 .hero__chars .grid__doll .doll__desc .doll__text h2 {
   color: rgb(255, 166, 0);
   font-family: "Tektur", cursive;
   font-style: italic;
-}
-.hero__chars .grid__doll .doll__desc .doll__text h2:hover {
-  color: rgb(255, 238, 0);
-  text-shadow: 2px 2px 4px rgb(255, 166, 0);
 }
 .hero__chars .grid__doll .doll__desc .doll__text p {
   color: white;
@@ -877,9 +879,20 @@ body .hidden-blur {
   text-decoration: line-through;
   color: red;
 }
+.bootstrap__form .fade-in {
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .bootstrap__form .form__bg {
   grid-area: form;
-  background-image: url(../../img/OPS5_Y.webp);
+  background-image: url(../../img/black-whiteBG.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -888,6 +901,19 @@ body .hidden-blur {
   border-radius: 2rem;
   box-shadow: 6px 6px 4px #666;
   margin: 2.3rem 0;
+}
+.bootstrap__form .form__bg .scale-in-center {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .bootstrap__form .form__bg .form__placement {
   background-color: #19191f;
