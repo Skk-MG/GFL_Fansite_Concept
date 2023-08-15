@@ -34,6 +34,7 @@
             text-align: center;
             text-shadow: 2px 2px 8px #8380807c;
             letter-spacing: 1.5rem;
+            z-index: -1;
 
             background: -webkit-linear-gradient($colorPrincipal, $colorSecundario);
             background-clip: content-box;
@@ -69,6 +70,7 @@
             font-size: 1.3rem;
             line-height: 1.5;
             color: white;
+            z-index: -1;       // esto hace que los elementos de animista queden debajo del menu hamburguesa
         }
 
         h2 {

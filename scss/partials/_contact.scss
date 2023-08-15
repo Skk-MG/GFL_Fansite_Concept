@@ -6,8 +6,14 @@
     "titulo  form  .";
     padding: 1rem;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
     .form__title {
         grid-area: titulo;
+        z-index: -1;
         
         h1 {
             @include titulo_pag;
@@ -46,6 +52,11 @@
         border-radius: 2rem;
         box-shadow: 6px 6px 4px #666;
         margin: 2.3rem 0;
+
+        @include mobile {
+            padding: 4rem 8rem 4rem 8rem;
+            // z-index: -1;             // no puedo aplicar esta solucion aqui porque form deja de funcionar
+        }
 
         .scale-in-center{animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 2s both}
     

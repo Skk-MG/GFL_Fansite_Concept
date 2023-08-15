@@ -8,11 +8,21 @@
     padding: 2rem;
     gap: 2rem;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
     .twatter__iframe {
+        z-index: -1;
 
         .titulo__pagina{
             padding: 1rem;
             width: 80%;
+
+            @include mobile {
+                width: 100%;
+            }
 
             h1 {
                 @include titulo_pag;
@@ -24,7 +34,13 @@
                 color: white;
                 font-family: $fuenteTexto;
                 font-size: 2rem;
+
+                @include spanstyle;
             }
+        }
+
+        .twitter-timeline {
+            height: 300;
         }
     }
 
@@ -42,6 +58,11 @@
         gap: 2rem;
         margin-right: 1rem;
         margin-bottom: 1rem;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
 
         %flexrow {
             display: flex;

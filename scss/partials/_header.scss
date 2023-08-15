@@ -24,10 +24,11 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                background-color: black;
+                background-color: rgb(0, 0, 0, .95);
                 padding: 1rem;
                 padding-bottom: 0;
                 box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+                border-radius: 2rem;
                 z-index: 1;
             }
 
@@ -88,10 +89,6 @@
     
         .logo {
             max-width: 15rem;
-    
-            @include mobile {
-                max-width: 8rem;
-            }
         }
 
         .hero__nav.visible {
