@@ -793,6 +793,160 @@ body .hidden-blur {
   width: 50%;
   border-radius: 1rem;
 }
+.hero__chars .mobile_faction {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .hero__chars .mobile_faction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .hero__chars .mobile_faction li {
+    list-style-type: none;
+    gap: 1rem;
+  }
+  .hero__chars .mobile_faction li img {
+    height: 8rem;
+    width: 100%;
+  }
+  .hero__chars .mobile_faction .faction__mobile1 {
+    background-color: #050505;
+    border: 2px solid rgb(5, 114, 117);
+    border-radius: 1rem;
+  }
+}
+.hero__chars .char__mobile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .hero__chars .char__mobile {
+    display: flex;
+  }
+}
+.hero__chars .char__mobile ul, .hero__chars .char__mobile body, .hero__chars .char__mobile p {
+  margin: 0;
+  padding: 0;
+}
+.hero__chars .char__mobile .slider {
+  box-sizing: border-box;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero__chars .char__mobile .slider .slides-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  transition: transform 0.5s;
+}
+.hero__chars .char__mobile .slider .slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #19191f;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transform-origin: center;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "text1 pola" "text1 text2";
+  padding-top: 3rem;
+  background-image: url(../../img/profileBackground.webp);
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile {
+  grid-area: text1;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile .text_1st {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #19191f;
+  border: 2px solid rgb(5, 114, 117);
+  border-radius: 1rem;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile .text_1st h2 {
+  color: rgb(255, 166, 0);
+  font-family: "Tektur", cursive;
+  font-style: italic;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile .text_1st p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .text_2nd {
+  grid-area: text2;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .text_2nd p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #19191f;
+  border: 2px solid rgb(5, 114, 117);
+  border-radius: 1rem;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .polaroid {
+  grid-area: pola;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .polaroid img {
+  width: 100%;
+  margin-top: 1rem;
+  padding-right: 0.5rem;
+}
+.hero__chars .char__mobile .slider .slide .desc-mobile .polaroid i {
+  display: block;
+  position: absolute;
+  top: 3rem;
+  right: 0.5rem;
+  color: rgb(255, 238, 0);
+  font-size: 3rem;
+}
+.hero__chars .char__mobile .slider .slide .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.hero__chars .char__mobile .slider:active .slides-container {
+  cursor: grabbing;
+}
+.hero__chars .char__mobile .slider .slides-container.moving {
+  transition: none;
+}
+.hero__chars .char__mobile .slider .slides-container.moving .slide {
+  transition: none;
+}
+.hero__chars .char__mobile .slider .slides-container.moving .parallax {
+  transition: none;
+}
+.hero__chars .char__mobile .slider .slide.current {
+  opacity: 1;
+  transform: scale(1);
+}
+.hero__chars .char__mobile .slider .slide.current .parallax {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
 
 .grid__carrusel {
   display: grid;
@@ -864,7 +1018,6 @@ body .hidden-blur {
 }
 .grid__carrusel #carouselExampleIndicators {
   grid-area: carrusel;
-  z-index: -1;
 }
 .grid__carrusel #carouselExampleIndicators .carousel-inner {
   padding: 0.5rem;

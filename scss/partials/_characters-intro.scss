@@ -142,7 +142,6 @@
                     color: $colorPrincipal;
                     font-family: $fuenteTitulo;
                     font-style: italic;
-
                 }
 
                 p {
@@ -157,6 +156,196 @@
                 height: 75%;
                 width: 50%;
                 border-radius: 1rem;
+            }
+        }
+    }
+
+    .mobile_faction {
+        display: none;
+
+        @include mobile {
+            @include flex-row;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            padding: 1rem;
+            gap: 0.5rem;
+            
+            li {
+                list-style-type: none;
+                gap: 1rem;
+                
+                
+                img {
+                    height: 8rem;
+                    width: 100%;
+                }
+            }
+
+            .faction__mobile1 {
+                background-color: #050505;
+                border: 2px solid rgb(5, 114, 117);
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    .char__mobile {
+        display: none;
+
+        @include mobile {
+            display: flex;
+        }
+
+        ul, body, p {
+            margin: 0;
+            padding: 0;
+        }
+          
+        .slider {
+            box-sizing: border-box;
+            background: black;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+            .slides-container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                cursor: -webkit-grab;
+                cursor: grab;
+                transition: transform .5s;
+
+            }
+
+            .slide {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: #19191f;
+                opacity: .8;
+                transform: scale(.9);
+                transform-origin: center;
+                transition: transform .5s, opacity .5s;
+
+                .desc-mobile {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto 1fr;
+                    grid-template-areas: 
+                    "text1 pola"
+                    "text1 text2";
+                    // margin-top: 3rem;
+                    padding-top: 3rem;
+                    background-image: url(../../img/profileBackground.webp);
+                    
+                    .doll__mobile {
+                        grid-area: text1;
+
+                        .text_1st {
+
+                            display: flex;
+                            flex-direction: column;
+    
+                            padding: 0.5rem;
+                            margin: 1rem;
+    
+                            background-color: #19191f;
+                            border: 2px solid rgb(5, 114, 117);
+                            border-radius: 1rem;
+    
+                            h2 {
+                                color: $colorPrincipal;
+                                font-family: $fuenteTitulo;
+                                font-style: italic;
+                            }
+    
+                            p {
+                                color: white;
+                                font-family: $fuenteTexto;
+                                font-size: 1.2rem;
+                                line-height: 1.3;
+                            }
+                        }
+                    }
+
+                    .text_2nd{
+                        grid-area: text2;
+
+                        p {
+                            color: white;
+                            font-family: $fuenteTexto;
+                            font-size: 1.2rem;
+                            line-height: 1.3;
+    
+                            padding: 0.5rem;
+                            margin: 1rem;
+    
+                            background-color: #19191f;
+                            border: 2px solid rgb(5, 114, 117);
+                            border-radius: 1rem;
+                        }
+                    }
+
+                    .polaroid {
+                        grid-area: pola;
+                        
+                        img {
+                            width: 100%;
+                            margin-top: 1rem;
+                            padding-right: 0.5rem;
+                        }
+
+                        i {
+                            display: block;
+                            position: absolute;
+                            top: 3rem;
+                            right: 0.5rem;
+
+                            color: $colorHover;
+                            font-size: 3rem;
+                        }
+
+                    }
+                }
+
+                .parallax {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: transform .5s, opacity .5s;
+                }
+            }
+              
+            &:active .slides-container {
+                cursor: -webkit-grabbing;
+                cursor: grabbing;
+            }
+              
+            .slides-container.moving {
+                transition: none;
+            }
+            .slides-container.moving .slide {
+                transition: none;
+            }
+            .slides-container.moving .parallax {
+                transition: none;
+            }
+              
+            .slide.current {
+                opacity: 1;
+                transform: scale(1);
+
+                .parallax {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                }
             }
         }
     }
