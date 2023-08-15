@@ -73,43 +73,12 @@
             z-index: -1;       // esto hace que los elementos de animista queden debajo del menu hamburguesa
         }
 
-        h2 {
-            @include title_h2;
-        }
-
-        .typewriter {
-            overflow: hidden;
-            border-right: .15em solid $colorPrincipal; 
-            white-space: nowrap; 
-            margin: 0 auto; 
-            letter-spacing: .15em; 
-            animation: typing 4s steps(40, end), blink-caret 1s linear infinite;
-
-            @include mobile {
-                display: none;
-            }
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: $colorPrincipal; }
-        }
-        
         .slide-in-left{animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both}
 
         @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
-
-        .typewriterMobile {
-            display: none;
-
-            @include mobile {
-                display: inherit;
-            }
+        
+        h2 {
+            @include title_h2;
         }
 
         .slide-in-blurred-left{animation:slide-in-blurred-left 1.5s cubic-bezier(.23,1.000,.32,1.000) both}
@@ -132,7 +101,6 @@
                 color: #ececec
             }
         }
-
     }
     
     .grid__item3 {

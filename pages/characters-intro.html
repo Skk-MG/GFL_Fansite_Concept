@@ -70,7 +70,7 @@
             <li class="faction__item4"><img class="slide-in-fwd-center" src="../img/16LAB_logo.png" alt="16 LAB logo, the player's ally and supplier of technology"></li>
         </ul>
 
-        <ul class="mobile_faction">
+        <ul class="mobile_faction">                                                              <!--  MOBILE ELEMENT  -->
             <li class="faction__mobile1"><img src="../img/AR_logo.png" alt="Anti Rain team logo, the main protagonists of this story"></li>
             <li class="faction__mobile2"><img src="../img/404_logo.png" alt="404 team logo, mercenary hackers with very little moral concerns"></li>
             <li class="faction__mobile3"><img src="../img/GK_logo.png" alt="Griffin & Kryuger PMC logo, the player's faction"></li>
@@ -81,34 +81,34 @@
 
             <div class="char__ARteam">
 
-                <div class="doll M4" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                <div class="doll M4" id="dollM4" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <img src="../img/M4A1_P.png" alt="M4A1's profile picture">
                     <p>M4A1 - AR - <span class="stars">☆☆☆☆</span></p>
                 </div>
 
-                <div class="doll m16" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+                <div class="doll m16" id="dollM16A1" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                     <img src="../img/M16A1_P.png" alt="M16A1's profile picture">
                     <p>M16A1 - AR - <span class="stars">☆☆☆☆</span></p>
                 </div>
 
-                <div class="doll ar15" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                <div class="doll ar15" id="dollAR15" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                     <img src="../img/AR15_P.png" alt="AR15's profile picture">
                     <p>AR-15 - AR - <span class="stars">☆☆☆☆</span></p>
                 </div>
 
-                <div class="doll SOP" data-aos="fade-right" data-aos-duration="2500" data-aos-once="true">
+                <div class="doll SOP" id="dollSOP2" data-aos="fade-right" data-aos-duration="2500" data-aos-once="true">
                     <img src="../img/SOPMOD_P.png" alt="M4 SOPMOD 2's profile picture">
                     <p>SOPMOD II - AR - <span class="stars">☆☆☆☆</span></p>
                 </div>
 
-                <div class="doll RO" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+                <div class="doll RO" id="dollRO635" data-aos="fade-right" data-aos-duration="2500" data-aos-once="true">
                     <img class="golden" src="../img/RO635_P.png" alt="RO635's profile picture">
                     <p>RO635 - SMG - <span class="stars gold">☆☆☆☆☆</span></p>
                 </div>
 
             </div>
 
-            <div class="doll__desc slide-in-bottom">
+            <div class="doll__desc M4A1 slide-in-right" id="desc1">
 
                 <div class="doll__text">
                     <h2>"Commander,<br>please take care of me"</h2>
@@ -120,22 +120,85 @@
                     <p>Oh yea and before you ask, yes those are polaroids. You see, I'm just a poor merc doing her job and I'm clearly not paid enough to buy a better camera so I make do with what I have... So if you want better quality you'll have to make some donations~</p>
                 </div>
 
-                <img src="../img/polaroid-M4A1.webp" alt="A polaroid full body picture of M4A1, taken in some unknown operation">
+                <img src="../img/polaroid-M4A1.webp" alt="A polaroid picture of M4A1, taken in some unknown operation">
             </div>
 
+            <div class="doll__desc M16 slide-in-right" id="desc2">
+
+                <div class="doll__text">
+                    <h2>"Yo, it's M16. <br>Leave the mission to me"</h2>
+
+                    <p>The classic, the veteran, the old dog of war rifle made for braving the jungle. With a commanding and inspiring presence the AR Team's "big sister" is a paragon virtue and maturity. Since she's the oldest member she has a great wealth of experience and knowledge of the battlefield. If there is someone I'd ever rely on<span>not that I'd ever rely on anyone</span>it would be her.</p>
+
+                    <p>I should also mention this, she's among the very few survivors of the "Butterfly Incident"... for a simple T-Doll to able to survive such a disaster, she'd have to deal with the devil or be the toughest bastard on this side of the world.</p>
+
+                    <p>Also... uhm, do ignore those marks commander. A CERTAIN DORK tried to destroy this picture but I stopped her on time💢</p>
+                </div>
+
+                <img src="../img/polaroid-M16A1.webp" alt="A somewhat damaged polaroid picture of M16A1, taken inside a classified military base">
+            </div>
+
+            <div class="doll__desc AR15 slide-in-right" id="desc3">
+
+                <div class="doll__text">
+                    <h2>"AR-15. Please allow me to formally join this honorable squad and watch me as I bring you victory"</h2>
+
+                    <p>Lightweight and cheap, the civilian's favorite. Goodness this girl takes her job seriously. Confident, strict and grumpy, she usually takes the role of the "straight man" in the team. There isn't a lot to remark about her other than the fact that she's the demolitions expert. So if I were you I wouldn't anger her haha~</p>
+
+                    <p>Built to be an elite soldier, she despises M4A1 as a leader<span>no big surprise</span>and would rather jump in the battle by herself. She's a dangerous one, commander... I like her~</p>
+
+                    <p>I took this picture while she was spacing out in a surveillance mission, what an elite dork~</p>
+                </div>
+
+                <img src="../img/polaroid-AR15.webp" alt="A polaroid picture of AR-15, taken in a surveillance operation over a city">
+            </div>
+
+            <div class="doll__desc SOP2 slide-in-right" id="desc4">
+
+                <div class="doll__text">
+                    <h2>"M4 SOPMOD II, finally... Finally... I've found you commander!"</h2>
+
+                    <p>The SPEC-OPS go-to modification kit. Incredibly sadistic and resilient, she's the team's bruiser. I've seen her jump to the enemy lines and tear down dozens of dolls all by herself... You'd expect her to be disobedient but she will always listen to her team's members or commander's orders. She's like an attack dog, but like, super extra lethal.</p>
+
+                    <p>I don't know whose idea was to give an elite T-doll the need to collect eyes and tear other dolls into pieces... I wonder whether it was intended or not.</p>
+
+                    <p>Fun fact, taking this picture wasn't an easy task AT ALL. She's too fast, even for a T-Doll!</p>
+                </div>
+
+                <img src="../img/polaroid-SOP2.webp" alt="A polaroid picture of M4 SOPMOD II, taken in combat inside a city">
+            </div>
+
+            <div class="doll__desc ROchan slide-in-right" id="desc5">
+
+                <div class="doll__text">
+                    <h2>"Nice to meet you, Commander. RO635 is on standby, awaiting your orders."</h2>
+
+                    <p>While peeking around databases and places I probably shouldn't be I found records mentioning a new member for AR team. I couldn't find a lot regarding this mysterious T-Doll other than her electronic warfare modules are top tier and something about her is "Next generation", don't know what though.</p>
+
+                    <p>Lucky me, I did manage to get a picture just because I'm that awesome <span>also it's going to cost you extra</span>, she looks fairly unremarkable to me... other than the fact that she looks like a banana with that jacket.</p>
+
+                </div>
+
+                <img src="../img/polaroid-RO635.webp" alt="A polaroid picture of RO635, taken in a remote lab">
+            </div>
+            
         </section>
 
-        <section class="char__mobile">
+        <section id="carouselExampleIndicators" class="carousel slide swing-in-right-fwd" data-bs-ride="true">           <!--  MOBILE ELEMENT  -->    
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active kino" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="kino" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="kino" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="kino" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="kino" aria-label="Slide 5"></button>
+            </div>
 
-            <div class="slider">
-                <ul class="slides-container">
-    
-                <li class="slide">
-                    
-                    <div class="desc-mobile parallax">
+            <div class="carousel-inner">
 
+                <div class="carousel-item active">
+                    <div class="desc-mobile">
                         <div class="doll__mobile">
-
                             <div class="text_1st">
                                 <h2>"Commander,<br>please take care of me"</h2>
                     
@@ -147,45 +210,117 @@
                         </div>
                         
                         <div class="polaroid">
-                            <img src="../img/polaroid-M4A1.webp" alt="">
+                            <img src="../img/polaroid-M4A1.webp" alt="A polaroid picture of M4A1, taken in some unknown operation">
+
+                            <i class="bi bi-zoom-in"></i>
+                        </div>                  
+                        <div  class="text_2nd">
+                            <p>Oh yea and before you ask, yes those are polaroids. You see, I'm just a poor merc doing her job and I'm clearly not paid enough to buy a better camera so I make do with what I have... So if you want better quality you'll have to make some donations~</p>
+                        </div>                     
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"Yo, it's M16. <br>Leave the mission to me"</h2>
+
+                                <p>The classic, the veteran, the old dog of war rifle made for braving the jungle. With a commanding and inspiring presence the AR Team's "big sister" is a paragon virtue and maturity. Since she's the oldest member she has a great wealth of experience and knowledge of the battlefield. If there is someone I'd ever rely on<span>not that I'd ever rely on anyone</span>it would be her.</p>
+            
+                                <p>I should also mention this, she's among the very few survivors of the "Butterfly Incident"... for a simple T-Doll to able to survive such a disaster, she'd have to deal with the devil or be the toughest bastard on this side of the world.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img src="../img/polaroid-M16A1.webp" alt="A somewhat damaged polaroid picture of M16A1, taken inside a classified military base">
 
                             <i class="bi bi-zoom-in"></i>
                         </div>
                         
-                        <div  class="text_2nd">
-                            <p>Oh yea and before you ask, yes those are polaroids. You see, I'm just a poor merc doing her job and I'm clearly not paid enough to buy a better camera so I make do with what I have... So if you want better quality you'll have to make some donations~</p>
+                        <div  class="text_2nd">                       
+                            <p>Also... uhm, do ignore those marks commander. A CERTAIN DORK tried to destroy this picture but I stopped her on time💢</p>
                         </div>
-
                     </div>
+                </div>
 
-                </li>
-                
-                <li class="slide">
-                    <div class="parallax"><p>Try arrow keys too ➡️</p></div>
-                </li>
-                <li class="slide">
-                    <div class="parallax"><p>Like this ?</p></div>
-                </li>
-                <li class="slide">
-                    <div class="parallax"><p>Oh, and lucky you</p></div>
-                </li>
-                <li class="slide">
-                    <div class="parallax"><p>I've got a website</p></div>
-                </li>
-                <li class="slide">
-                    <div class="parallax"><p>Check it out ➡️</p></div>
-                </li>
-                <li class="slide">
-                    <div class="parallax"><p><a href="http://noefalque.com">noe.im</a> 🎉</p></div>
-                </li>
-                </ul>
-            </div>
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"AR-15. Please allow me to formally join this honorable squad and watch me as I bring you victory"</h2>
+
+                                <p>Lightweight and cheap, the civilian's favorite. Goodness this girl takes her job seriously. Confident, strict and grumpy, she usually takes the role of the "straight man" in the team. There isn't a lot to remark about her other than the fact that she's the demolitions expert. So if I were you I wouldn't anger her haha~</p>
             
+                                <p>Built to be an elite soldier, she despises M4A1 as a leader<span>no big surprise</span>and would rather jump in the battle by herself. She's a dangerous one, commander... I like her~</p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img src="../img/polaroid-AR15.webp" alt="A polaroid picture of AR-15, taken in a surveillance operation over a city">
+
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                        
+                        <div  class="text_2nd">                       
+                            <p>I took this picture while she was spacing out in a surveillance mission, what an elite dork~</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"M4 SOPMOD II, finally... Finally... I've found you commander!"</h2>
+
+                                <p>The SPEC-OPS go-to modification kit. Incredibly sadistic and resilient, she's the team's bruiser. I've seen her jump to the enemy lines and tear down dozens of dolls all by herself... You'd expect her to be disobedient but she will always listen to her team's members or commander's orders. She's like an attack dog, but like, super extra lethal.</p>
+            
+                                <p>I don't know whose idea was to give an elite T-doll the need to collect eyes and tear other dolls into pieces...  I wonder whether it was intended or not.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img src="../img/polaroid-SOP2.webp" alt="A polaroid picture of M4 SOPMOD II, taken in combat inside a city">
+
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                        
+                        <div  class="text_2nd">                       
+                            <p>Fun fact, taking this picture wasn't an easy task AT ALL. She's too fast, even for a T-Doll!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"Nice to meet you, Commander. RO635 is on standby, awaiting your orders."</h2>
+
+                                <p>While peeking around databases and places I probably shouldn't be I found records mentioning a new member for AR team. I couldn't find a lot regarding this mysterious T-Doll other than her electronic warfare modules are top tier and something about her is "Next generation", don't know what though.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img src="../img/polaroid-RO635.webp" alt="A polaroid picture of RO635, taken in a remote lab">
+
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                        
+                        <div  class="text_2nd">                       
+                            <p>Lucky me, I did manage to get a picture just because I'm that awesome <span>also it's going to cost you extra</span>, she looks fairly unremarkable to me... other than the fact that she looks like a banana with that jacket.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
         </section>
 
     </main>
 
-    <footer class="footer" data-aos="fade-zoom-in"  data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0" data-aos-once="true">
+    <footer class="footer">
 
         <div class="footer__content">
 

@@ -7,7 +7,7 @@
 
 body {
   background-color: #19191f;
-  background-image: url(../../img/404_ShadowLogo.png);
+  background-image: url(../img/404_ShadowLogo.png);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-attachment: local;
@@ -72,14 +72,19 @@ body .hidden-modal {
 }
 body .blur-bg {
   position: absolute;
-  top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  border: 2px solid rgb(5, 114, 117);
+  border-radius: 1rem;
   background: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  z-index: 1;
+  z-index: 98;
 }
 body .hidden-blur {
   display: none;
@@ -420,40 +425,6 @@ body .hidden-blur {
     z-index: -1;
   }
 }
-.grid .grid__item2 h2 {
-  font-family: "Tektur", cursive;
-  color: rgb(255, 166, 0);
-  text-shadow: 1px 1px 3px rgb(255, 166, 0);
-}
-.grid .grid__item2 .typewriter {
-  overflow: hidden;
-  border-right: 0.15em solid rgb(255, 166, 0);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 4s steps(40, end), blink-caret 1s linear infinite;
-}
-@media screen and (max-width: 576px) {
-  .grid .grid__item2 .typewriter {
-    display: none;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(255, 166, 0);
-  }
-}
 .grid .grid__item2 .slide-in-left {
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -467,13 +438,10 @@ body .hidden-blur {
     opacity: 1;
   }
 }
-.grid .grid__item2 .typewriterMobile {
-  display: none;
-}
-@media screen and (max-width: 576px) {
-  .grid .grid__item2 .typewriterMobile {
-    display: inherit;
-  }
+.grid .grid__item2 h2 {
+  font-family: "Tektur", cursive;
+  color: rgb(255, 166, 0);
+  text-shadow: 1px 1px 3px rgb(255, 166, 0);
 }
 .grid .grid__item2 .slide-in-blurred-left {
   animation: slide-in-blurred-left 1.5s cubic-bezier(0.23, 1, 0.32, 1) both;
@@ -650,7 +618,7 @@ body .hidden-blur {
   }
 }
 .hero__chars .faction__list .faction__item1::after {
-  content: url(../../img/selectedWheel.gif);
+  content: url(../img/selectedWheel.gif);
   position: absolute;
 }
 .hero__chars .faction__list .faction__item2 .slide-in-fwd-center {
@@ -716,7 +684,7 @@ body .hidden-blur {
   cursor: pointer;
   width: 380px;
   margin: 0 0 0.5rem 1rem;
-  background-image: url(../../img/profileBackground.webp);
+  background-image: url(../img/profileBackground.webp);
 }
 .hero__chars .grid__doll .char__ARteam .doll:hover p {
   color: rgb(255, 238, 0);
@@ -739,24 +707,16 @@ body .hidden-blur {
   padding: 1rem;
   margin: 0;
 }
-.hero__chars .grid__doll .char__ARteam .M4 {
-  position: relative;
+.hero__chars .grid__doll .slide-in-right {
+  animation: slide-in-right 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.hero__chars .grid__doll .char__ARteam .M4::before {
-  content: url(../../img/selectedWheel.gif);
-  position: absolute;
-  right: calc(100% + 1rem);
-}
-.hero__chars .grid__doll .slide-in-bottom {
-  animation: slide-in-bottom 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes slide-in-bottom {
+@keyframes slide-in-right {
   0% {
-    transform: translateY(1000px);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -765,13 +725,21 @@ body .hidden-blur {
   flex-direction: row;
   margin-right: 8rem;
   margin-bottom: 1rem;
-  height: -moz-max-content;
-  height: max-content;
-  border: 2px solid rgb(5, 114, 117);
+  height: 85vh;
+  width: auto;
+  background-image: url(../img/profileBackground.webp);
+  border: 2px solid rgb(230, 90, 10);
   border-radius: 1rem;
 }
 .hero__chars .grid__doll .doll__desc .doll__text {
   padding: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #19191f;
+  border: 2px solid rgb(5, 114, 117);
+  border-radius: 1rem;
 }
 .hero__chars .grid__doll .doll__desc .doll__text:hover h2 {
   color: rgb(255, 238, 0);
@@ -785,13 +753,48 @@ body .hidden-blur {
 .hero__chars .grid__doll .doll__desc .doll__text p {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.2;
 }
+.hero__chars .grid__doll .doll__desc .doll__text span {
+  text-decoration: line-through;
+  color: red;
+}
 .hero__chars .grid__doll .doll__desc img {
-  height: 75%;
-  width: 50%;
+  height: 44.106rem;
+  width: 30.875rem;
   border-radius: 1rem;
+  padding: 0.5rem;
+}
+.hero__chars .grid__doll .M16 {
+  display: none;
+}
+.hero__chars .grid__doll .AR15 {
+  display: none;
+}
+.hero__chars .grid__doll .SOP2 {
+  display: none;
+}
+.hero__chars .grid__doll .ROchan {
+  display: none;
+}
+.hero__chars .grid__doll .M4A1.visible {
+  display: flex;
+}
+.hero__chars .grid__doll .M16.visible {
+  display: flex;
+}
+.hero__chars .grid__doll .AR15.visible {
+  display: flex;
+}
+.hero__chars .grid__doll .SOP2.visible {
+  display: flex;
+}
+.hero__chars .grid__doll .ROchan.visible {
+  display: flex;
+}
+.hero__chars .grid__doll .M4A1.woosh {
+  display: none;
 }
 .hero__chars .mobile_faction {
   display: none;
@@ -819,55 +822,47 @@ body .hidden-blur {
     border-radius: 1rem;
   }
 }
-.hero__chars .char__mobile {
+.hero__chars #carouselExampleIndicators {
   display: none;
 }
 @media screen and (max-width: 576px) {
-  .hero__chars .char__mobile {
-    display: flex;
+  .hero__chars #carouselExampleIndicators {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem 0.5rem 3rem 0.5rem;
+    margin-bottom: 4rem;
+    background-color: black;
+    border: 2px solid rgb(255, 166, 0);
   }
 }
-.hero__chars .char__mobile ul, .hero__chars .char__mobile body, .hero__chars .char__mobile p {
-  margin: 0;
-  padding: 0;
+.hero__chars #carouselExampleIndicators .carousel-indicators {
+  gap: 5px;
 }
-.hero__chars .char__mobile .slider {
-  box-sizing: border-box;
-  background: black;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+.hero__chars #carouselExampleIndicators .carousel-indicators .kino {
+  padding: 5px;
+  background-color: rgb(7, 158, 163);
 }
-.hero__chars .char__mobile .slider .slides-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  cursor: grab;
-  transition: transform 0.5s;
+.hero__chars #carouselExampleIndicators .carousel-item {
+  height: 105vh;
 }
-.hero__chars .char__mobile .slider .slide {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #19191f;
-  opacity: 0.8;
-  transform: scale(0.9);
-  transform-origin: center;
-  transition: transform 0.5s, opacity 0.5s;
-}
-.hero__chars .char__mobile .slider .slide .desc-mobile {
+.hero__chars #carouselExampleIndicators .desc-mobile {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: "text1 pola" "text1 text2";
-  padding-top: 3rem;
-  background-image: url(../../img/profileBackground.webp);
+  background-image: url(../img/profileBackground.webp);
+  border: 2px solid rgb(230, 90, 10);
+  border-radius: 1rem;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile {
+.hero__chars #carouselExampleIndicators .desc-mobile .doll__mobile {
   grid-area: text1;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile .text_1st {
+.hero__chars #carouselExampleIndicators .desc-mobile .doll__mobile span {
+  text-decoration: line-through;
+  color: red;
+}
+.hero__chars #carouselExampleIndicators .desc-mobile .doll__mobile .text_1st {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -876,21 +871,21 @@ body .hidden-blur {
   border: 2px solid rgb(5, 114, 117);
   border-radius: 1rem;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile .text_1st h2 {
+.hero__chars #carouselExampleIndicators .desc-mobile .doll__mobile .text_1st h2 {
   color: rgb(255, 166, 0);
   font-family: "Tektur", cursive;
   font-style: italic;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .doll__mobile .text_1st p {
+.hero__chars #carouselExampleIndicators .desc-mobile .doll__mobile .text_1st p {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   line-height: 1.3;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .text_2nd {
+.hero__chars #carouselExampleIndicators .desc-mobile .text_2nd {
   grid-area: text2;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .text_2nd p {
+.hero__chars #carouselExampleIndicators .desc-mobile .text_2nd p {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
@@ -901,51 +896,21 @@ body .hidden-blur {
   border: 2px solid rgb(5, 114, 117);
   border-radius: 1rem;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .polaroid {
+.hero__chars #carouselExampleIndicators .desc-mobile .polaroid {
   grid-area: pola;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .polaroid img {
+.hero__chars #carouselExampleIndicators .desc-mobile .polaroid img {
   width: 100%;
   margin-top: 1rem;
   padding-right: 0.5rem;
 }
-.hero__chars .char__mobile .slider .slide .desc-mobile .polaroid i {
+.hero__chars #carouselExampleIndicators .desc-mobile .polaroid i {
   display: block;
   position: absolute;
-  top: 3rem;
-  right: 0.5rem;
+  top: 0;
+  right: 0;
   color: rgb(255, 238, 0);
   font-size: 3rem;
-}
-.hero__chars .char__mobile .slider .slide .parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 0.5s, opacity 0.5s;
-}
-.hero__chars .char__mobile .slider:active .slides-container {
-  cursor: grabbing;
-}
-.hero__chars .char__mobile .slider .slides-container.moving {
-  transition: none;
-}
-.hero__chars .char__mobile .slider .slides-container.moving .slide {
-  transition: none;
-}
-.hero__chars .char__mobile .slider .slides-container.moving .parallax {
-  transition: none;
-}
-.hero__chars .char__mobile .slider .slide.current {
-  opacity: 1;
-  transform: scale(1);
-}
-.hero__chars .char__mobile .slider .slide.current .parallax {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 
 .grid__carrusel {
@@ -1071,6 +1036,7 @@ body .hidden-blur {
   width: 100%;
   padding-top: 56.25%;
   margin-bottom: 2rem;
+  height: 46.2rem;
 }
 @media screen and (max-width: 576px) {
   .grid__carrusel #carouselExampleIndicators .carousel-inner .carousel-item .trailer__vid {
@@ -1291,7 +1257,7 @@ body .hidden-blur {
 }
 .bootstrap__form .form__bg {
   grid-area: form;
-  background-image: url(../../img/black-whiteBG.webp);
+  background-image: url(../img/black-whiteBG.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

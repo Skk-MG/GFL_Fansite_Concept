@@ -1,0 +1,70 @@
+ <!---------------- CAMBIOS ---------------->
+
+>9/8
+- menu hamburguesa arreglado
+- codigo footer simplificado
+- iconos para chars finalizados
+- logos finalizados
+- imagenes de chars adquiridas
+- recortes realizados
+- scss inicial aplicado a chars
+
+>10/8
+- tamaño logo arrelado
+- estructura de chars establecida con grid y flex para organizar el contenido
+- tamaño de imagen aproximado establecido
+#####averiguar como organizar items dentro de una grid para centrar char_ARteam##### = align-items: center;
+- mas diseño de la estructura y la tematica de chars
+- muchos conceptos aprendidos hoy
+
+>11/8
+- nuevo BG
+- nuevos botones index
+- nuevo titulo (index)
+- link establecido entre el logo en las paginas y el index
+- ligera reorganizacion de todos los HTML para que el codigo sea mas leible
+- ajustes en chars terminados, solo queda embellecer con CSS
+- imagenes de lore reajustadas y convertidas a webp, ahora no pesan nada
+- fondo para lista de dolls en chars encontrado
+- lista de chars alineada 
+- contenido de chars centrado
+- twatter agregado a community
+- lista de paginas en community organizadas con grid
+
+>12/8
+- contact completado, form estilizada y todo
+- iconos de community finalizados y puestos en su lugar
+- ligera restructuracion de community.html
+- index title arreglado
+- botones realineados
+- texto agregado a contact
+- background de dolls difuminado y borde agregado, solo queda estilizar
+- tamaño de imagenes reducido
+- encontre con que marcar que faccion esta seleccionada
+ 
+>13/8
+- titulo re-estilizado
+- introduccion re-escrita y re-estilizada
+- index finalizado
+- bordes agregados a las pfp de ARteam
+- descripcion para m4 hecha
+- detalles con CSS agregados
+- sassy writing agregado
+- mas detalles arreglados
+- contacts finished
+- ahora los links abren una pestaña nueva en vez de abrirse en la misma
+- SCSS II agregado (mixins y extend)
+- multiples animaciones agregadas
+
+>14/8
+- animaciones finalizadas
+- SEO agregado
+- index medai query finalizado
+- problema con menu hamburguesa y animista solucionado
+- media query en todos lo html excepto chars finalizado
+- media query finalizado, solo queda agregar contenido a charas y js para poder cambiarlos en desktop
+
+>15/8
+- contenido inicial de charas finalizado
+- js aplicado
+- multiples errores arreglados
