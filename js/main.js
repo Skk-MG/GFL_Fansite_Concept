@@ -38,8 +38,8 @@ document.addEventListener("keydown", function (event) {
           }         
 });
 
-const dollM4 = document.querySelector("#dollM4");
-const dollM16 = document.querySelector("#dollM16A1");
+const dollM4 = document.querySelector("#dollM4");                 // Lo siento mucho por el programador de JS que vea esto                    
+const dollM16 = document.querySelector("#dollM16A1");             // Juro que voy a aprender funciones 
 const doll15 = document.querySelector("#dollAR15");
 const dollSOP = document.querySelector("#dollSOP2");
 const dollRO = document.querySelector("#dollRO635");
@@ -50,7 +50,7 @@ const AR15desc = document.querySelector("#desc3");
 const SOPdesc = document.querySelector("#desc4");
 const ROdesc = document.querySelector("#desc5");
 
-dollM4.addEventListener("click", () => {
+dollM4.addEventListener("click", () => { 
     M4desc.classList.add("visible");
     M4desc.classList.remove("woosh");
     M16desc.classList.remove("visible");
