@@ -34,7 +34,6 @@
                     <li class="menu__item"><a href="./game-lore.html">World</a></li>
                     <li class="menu__item"><a href="./news-community.html">News & Community</a></li>
                     <li class="menu__item"><a href="./contact.html">Contact</a></li>
-                    <button class="cambiar__idioma mobile"><i class="bi bi-translate"></i></button>
                 </ul>
             </nav>
 
@@ -64,51 +63,51 @@
         <h1 class="titulo__pagina chars tracking-in-expand">CHARACTER INTRO</h1>
 
         <ul class="faction__list">
-            <li class="faction__item1 slide-in-fwd-center"><img src="../img/AR_logo.png" alt="Anti Rain team logo, the main protagonists of this story"></li>
-            <li class="faction__item2"><img class="slide-in-fwd-center" src="../img/404_logo.png" alt="404 team logo, mercenary hackers with very little moral concerns"></li>
+            <li class="faction__item1 slide-in-fwd-center" id="ARteam"><img src="../img/AR_logo.png" alt="Anti Rain team logo, the main protagonists of this story"></li>
+            <li class="faction__item2" id="Team404"><img class="slide-in-fwd-center" src="../img/404_logo.png" alt="404 team logo, mercenary hackers with very little moral concerns"></li>
             <li class="faction__item3"><img class="slide-in-fwd-center" src="../img/GK_logo.png" alt="Griffin & Kryuger PMC logo, the player's faction"></li>
             <li class="faction__item4"><img class="slide-in-fwd-center" src="../img/16LAB_logo.png" alt="16 LAB logo, the player's ally and supplier of technology"></li>
         </ul>
 
-        <ul class="mobile_faction">                                                              <!--  MOBILE ELEMENT  -->
+        <ul class="mobile_faction">       <!-- ELEMENTO MOBILE ------------------------------------>                                                    
             <li class="faction__mobile1"><img src="../img/AR_logo.png" alt="Anti Rain team logo, the main protagonists of this story"></li>
             <li class="faction__mobile2"><img src="../img/404_logo.png" alt="404 team logo, mercenary hackers with very little moral concerns"></li>
-            <li class="faction__mobile3"><img src="../img/GK_logo.png" alt="Griffin & Kryuger PMC logo, the player's faction"></li>
-            <li class="faction__mobile4"><img src="../img/16LAB_logo.png" alt="16 LAB logo, the player's ally and supplier of technology"></li>
-        </ul>
+            <!-- <li class="faction__mobile3"><img src="../img/GK_logo.png" alt="Griffin & Kryuger PMC logo, the player's faction"></li>
+            <li class="faction__mobile4"><img src="../img/16LAB_logo.png" alt="16 LAB logo, the player's ally and supplier of technology"></li> -->
+        </ul>                             <!-- ELEMENTO MOBILE ------------------------------------>                        
 
-        <section class="grid__doll">
+        <section class="grid__doll" id="gridA">
 
             <div class="char__ARteam">
 
                 <div class="doll M4" id="dollM4" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <img src="../img/M4A1_P.png" alt="M4A1's profile picture">
-                    <p>M4A1 - AR - <span class="stars">☆☆☆☆</span></p>
+                    <p>M4A1 - AR - ☆☆☆☆</p>
                 </div>
 
                 <div class="doll m16" id="dollM16A1" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                     <img src="../img/M16A1_P.png" alt="M16A1's profile picture">
-                    <p>M16A1 - AR - <span class="stars">☆☆☆☆</span></p>
+                    <p>M16A1 - AR - ☆☆☆☆</p>
                 </div>
 
                 <div class="doll ar15" id="dollAR15" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                     <img src="../img/AR15_P.png" alt="AR15's profile picture">
-                    <p>AR-15 - AR - <span class="stars">☆☆☆☆</span></p>
+                    <p>AR-15 - AR - ☆☆☆☆</p>
                 </div>
 
-                <div class="doll SOP" id="dollSOP2" data-aos="fade-right" data-aos-duration="2500" data-aos-once="true">
+                <div class="doll SOP" id="dollSOP2" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                     <img src="../img/SOPMOD_P.png" alt="M4 SOPMOD 2's profile picture">
-                    <p>SOPMOD II - AR - <span class="stars">☆☆☆☆</span></p>
+                    <p>SOPMOD II - AR - ☆☆☆☆</p>
                 </div>
 
-                <div class="doll RO" id="dollRO635" data-aos="fade-right" data-aos-duration="2500" data-aos-once="true">
+                <div class="doll RO" id="dollRO635" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                     <img class="golden" src="../img/RO635_P.png" alt="RO635's profile picture">
-                    <p>RO635 - SMG - <span class="stars gold">☆☆☆☆☆</span></p>
+                    <p>RO635 - SMG - ☆☆☆☆☆</p>
                 </div>
 
             </div>
 
-            <div class="doll__desc M4A1 slide-in-right" id="desc1">
+            <div class="doll__desc M4A1 text-focus-in" id="desc1">
 
                 <div class="doll__text">
                     <h2>"Commander,<br>please take care of me"</h2>
@@ -123,7 +122,7 @@
                 <img src="../img/polaroid-M4A1.webp" alt="A polaroid picture of M4A1, taken in some unknown operation">
             </div>
 
-            <div class="doll__desc M16 slide-in-right" id="desc2">
+            <div class="doll__desc M16 text-focus-in" id="desc2">
 
                 <div class="doll__text">
                     <h2>"Yo, it's M16. <br>Leave the mission to me"</h2>
@@ -138,7 +137,7 @@
                 <img src="../img/polaroid-M16A1.webp" alt="A somewhat damaged polaroid picture of M16A1, taken inside a classified military base">
             </div>
 
-            <div class="doll__desc AR15 slide-in-right" id="desc3">
+            <div class="doll__desc AR15 text-focus-in" id="desc3">
 
                 <div class="doll__text">
                     <h2>"AR-15. Please allow me to formally join this honorable squad and watch me as I bring you victory"</h2>
@@ -153,7 +152,7 @@
                 <img src="../img/polaroid-AR15.webp" alt="A polaroid picture of AR-15, taken in a surveillance operation over a city">
             </div>
 
-            <div class="doll__desc SOP2 slide-in-right" id="desc4">
+            <div class="doll__desc SOP2 text-focus-in" id="desc4">
 
                 <div class="doll__text">
                     <h2>"M4 SOPMOD II, finally... Finally... I've found you commander!"</h2>
@@ -168,7 +167,7 @@
                 <img src="../img/polaroid-SOP2.webp" alt="A polaroid picture of M4 SOPMOD II, taken in combat inside a city">
             </div>
 
-            <div class="doll__desc ROchan slide-in-right" id="desc5">
+            <div class="doll__desc ROchan text-focus-in" id="desc5">
 
                 <div class="doll__text">
                     <h2>"Nice to meet you, Commander. RO635 is on standby, awaiting your orders."</h2>
@@ -181,17 +180,140 @@
 
                 <img src="../img/polaroid-RO635.webp" alt="A polaroid picture of RO635, taken in a remote lab">
             </div>
+
+        </section>
+
+        <section class="grid__doll Beta" id="gridB">
+
+            <div class="char__ARteam">
+
+                <div class="doll M4" id="dollUMP45" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <img src="../img/UMP45_P.png" alt="UMP45's profile picture">
+                    <p>UMP45 - SMG - ☆☆☆☆</p>
+                </div>
+
+                <div class="doll m16" id="dollUMP9" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+                    <img src="../img/UMP9_P.png" alt="UMP9's profile picture">
+                    <p>UMP9 - SMG - ☆☆☆☆</p>
+                </div>
+
+                <div class="doll ar15" id="doll416" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                    <img class="golden" src="../img/HK416_P.png" alt="HK416's profile picture">
+                    <p>HK416 - AR - ☆☆☆☆☆</p>
+                </div>
+
+                <div class="doll SOP" id="dollG11" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                    <img class="golden" src="../img/G11_P.png" alt="G11's profile picture">
+                    <p>G11 - AR - ☆☆☆☆☆</p>
+                </div>
+
+                <div class="doll RO" id="doll40" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                    <img src="../img/unknown_P.webp" alt="An error alert">
+                    <p>UMP40 - SMG - ☆☆☆☆</p>
+                </div>
+
+            </div>
+
+            <div class="doll__desc M4A1 text-focus-in" id="desc1_45">
+
+                <div class="doll__text">
+                    <h2>"UMP45 has arrived. Commander, let's get along from now on~"</h2>
+
+                    <p>Hi hi~ yours truly reporting, dear commander. Hmm what to say, I could write whatever I want about myself and you wouldn't be able to know what's true and what's fake but what kind of trusty mercenary would I be if I did that? Anyways, all you have to know is that I'm the leader of 404 and that I'm the one bringing you all this info.</p>
+
+                    <p>By the way, we are always up for hire as long as you can pay. Success is <span>almost</span> guranteed when we get involved~</p>
+
+                    <p>Here commander, I even took a picture of myself for you~ As it is pointless to try to hide 404's existence to you, that trick only works on other dolls.</p>
+                </div>
+
+                <img src="../img/polaroid-UMP45.webp" alt="A polaroid picture of UMP45, taken in an unknown hideout">
+            </div>
+
+            <div class="doll__desc M16 text-focus-in" id="desc2_9">
+
+                <div class="doll__text">
+                    <h2>"UMP9 has come home! Everybody, we're family now!"</h2>
+
+                    <p>My lovely "sister", fellow electronic warfare specialist and world history savant. Always cheerful and willing to give a hand, I couldn't ask for a better teammate <span>don't tell her I said that</span> Anyways, sometimes I think the phrase "Jack of all trades, master of none" fits her perfectly.</p>
+
+                    <p>Fun fact, despite her innocent looks she almost killed me once. Of course she failed miserably and got to keep a nice scar as a reward, the scar wasn't my idea though.</p>
+
+                    <p>Oh yea she also sends her regards and that she can't wait to meet the griffin family...</p>
+                </div>
+
+                <img src="../img/polaroid-UMP9.webp" alt="A polaroid picture of UMP9, taken in an alleyway">
+            </div>
+
+            <div class="doll__desc AR15 text-focus-in" id="desc3_416">
+
+                <div class="doll__text">
+                    <h2>"Are you the commander? HK416......Please remember this name, this...extraordinary name."</h2>
+
+                    <p>"German engineering is the best in the world" they say, and our dear elite here 100% believes it. Always serious and prideful, 416 never shuts up about doing things the "right way" and revenge for I don't know what. Lucky for us, she's not the leader here~ Regardless of that, she's one hell of a fighter... which means she has to do most of the heavy lifting here haha.</p>
+
+                    <p>Holds a massive grudge against M16A1 and the AR team in general because reasons. Also, do NOT give her any alcohol, trust me.</p>
+
+                    <p>I swear I've never seen her smile, what an edgelord.</p>
+                </div>
+
+                <img src="../img/polaroid-HK416.webp" alt="A polaroid picture of HK416, taken in a militarized zone">
+            </div>
+
+            <div class="doll__desc SOP2 text-focus-in" id="desc4_11">
+
+                <div class="doll__text">
+                    <h2>"G11...... Commander, are there enough beds around here?"</h2>
+
+                    <p>The team's marksman and professional sleeper. Lazy, sleepy, trash, deadweight are adjectives that come to mind when describing her, but I don't blame her, she wasn't even designed for combat in the first place. Despite that, she still gives her best to do the bare minimum and she's pretty good at it... Also the team does need a punching bag after all.</p>
+
+                    <p>416 is her official caretaker and is always yelling at her or smacking her for being lazy, that's why I always pair them. An "immovable object vs unstoppable force" situation haha~</p>
+
+                    <p>404's sleepiest soldier ready for duty! (she fell asleep 5 seconds after i managed to take this picture)</p>
+                </div>
+
+                <img src="../img/polaroid-G11.webp" alt="A polaroid picture of G11, taken in a bedroom">
+            </div>
+
+            <div class="doll__desc ROchan text-focus-in" id="desc5_40">
+
+                <div class="doll__text">
+                    <h2>"UMP40, making an appearance!"</h2>
+
+                    <p><span class="special">ERROR!###|@@~|€|@#@€@€@#@€¬@</span></p>
+                    <p><span class="special">~|€|@#@€@€@#ERROR!</span></p>
+                    <p><span class="special">ERROR!00000000000000</span></p>
+                    <p><span class="special">ERROR!###|</span></p>
+                    <h2>Commander, I will replace-</h2> 
+                    <p><span class="special">€~€#~€@¬|#¬€~~ERROR!</span></p>
+                    <p><span class="special">ERROR!~55555555555555555</span></p>
+                    <p><span class="special">495495495495ERROR!495495495495</span></p>
+                    <p><span class="special">ERROR!ERROR!ERROR!ERROR!ERROR!</span></p>
+                    <h2>all those outdated girls for you!</h2>
+                    <p><span class="special">////ERROR!!!!!!!!!!!!!!!!</span></p>
+                    <p><span class="special">ERROR!111111010101001</span></p>
+                    <p><span class="special">10101010100ERROR!000000</span></p>
+                    <p><span class="special">ACCESS DENIED</span></p>
+                </div>
+
+                <img src="../img/ump40.webp" alt="A glitchy, almost broken, image of UMP40">
+            </div>
             
         </section>
 
-        <section id="carouselExampleIndicators" class="carousel slide swing-in-right-fwd" data-bs-ride="true">           <!--  MOBILE ELEMENT  -->    
-            
+         <!-- ELEMENTO MOBILE ------------------------------------>          
+        <section id="carouselExampleIndicators" class="carousel slide swing-in-right-fwd" data-bs-ride="true">    
+         <!-- ELEMENTO MOBILE ------------------------------------>              
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active kino" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="kino" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="kino" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="kino" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="kino" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="kino" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="kino" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="kino" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="kino" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="kino" aria-label="Slide 10"></button>
             </div>
 
             <div class="carousel-inner">
@@ -211,8 +333,6 @@
                         
                         <div class="polaroid">
                             <img src="../img/polaroid-M4A1.webp" alt="A polaroid picture of M4A1, taken in some unknown operation">
-
-                            <i class="bi bi-zoom-in"></i>
                         </div>                  
                         <div  class="text_2nd">
                             <p>Oh yea and before you ask, yes those are polaroids. You see, I'm just a poor merc doing her job and I'm clearly not paid enough to buy a better camera so I make do with what I have... So if you want better quality you'll have to make some donations~</p>
@@ -234,8 +354,6 @@
                     
                         <div class="polaroid">
                             <img src="../img/polaroid-M16A1.webp" alt="A somewhat damaged polaroid picture of M16A1, taken inside a classified military base">
-
-                            <i class="bi bi-zoom-in"></i>
                         </div>
                         
                         <div  class="text_2nd">                       
@@ -258,8 +376,6 @@
                     
                         <div class="polaroid">
                             <img src="../img/polaroid-AR15.webp" alt="A polaroid picture of AR-15, taken in a surveillance operation over a city">
-
-                            <i class="bi bi-zoom-in"></i>
                         </div>
                         
                         <div  class="text_2nd">                       
@@ -282,8 +398,6 @@
                     
                         <div class="polaroid">
                             <img src="../img/polaroid-SOP2.webp" alt="A polaroid picture of M4 SOPMOD II, taken in combat inside a city">
-
-                            <i class="bi bi-zoom-in"></i>
                         </div>
                         
                         <div  class="text_2nd">                       
@@ -304,12 +418,135 @@
                     
                         <div class="polaroid">
                             <img src="../img/polaroid-RO635.webp" alt="A polaroid picture of RO635, taken in a remote lab">
-
-                            <i class="bi bi-zoom-in"></i>
                         </div>
                         
                         <div  class="text_2nd">                       
                             <p>Lucky me, I did manage to get a picture just because I'm that awesome <span>also it's going to cost you extra</span>, she looks fairly unremarkable to me... other than the fact that she looks like a banana with that jacket.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+                        
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"UMP45 has arrived. Commander, let's get along from now on~"</h2>
+                    
+                                <p>Hi hi~ yours truly reporting, dear commander. Hmm what to say, I could write whatever I want about myself and you wouldn't be able to know what's true and what's fake but what kind of trusty mercenary would I be if I did that? Anyways, all you have to know is that I'm the leader of 404 and that I'm the one bringing you all this info.</p>
+                    
+                                <p>By the way, we are always up for hire as long as you can pay. Success is <span>almost</span> guranteed when we get involved~</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="polaroid">
+                            <img src="../img/polaroid-UMP45.webp" alt="A polaroid picture of UMP45, taken in an unknown hideout">
+                        </div>                  
+                        <div  class="text_2nd">
+                            <p>Here commander, I even took a picture of myself for you~ As it is pointless to try to hide 404's existence to you, that trick only works on other dolls.</p>
+                        </div>                     
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"UMP9 has come home! Everybody, we're family now!"</h2>
+
+                                <p>My lovely "sister", fellow electronic warfare specialist and world history savant. Always cheerful and willing to give a hand, I couldn't ask for a better teammate <span>don't tell her I said that</span> Anyways, sometimes I think the phrase "Jack of all trades, master of none" fits her perfectly.</p>
+            
+                                <p>Fun fact, despite her innocent looks she almost killed me once. Of course she failed miserably and got to keep a nice scar as a reward, the scar wasn't my idea though.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img src="../img/polaroid-UMP9.webp" alt="A polaroid picture of UMP9, taken in an alleyway">
+                        </div>
+                        
+                        <div  class="text_2nd">                       
+                            <p>Oh yea she also sends her regards and that she can't wait to meet the griffin family...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"Are you the commander? HK416......Please remember this name, this...extraordinary name."</h2>
+
+                                <p>"German engineering is the best in the world" they say, and our dear elite here 100% believes it. Always serious and prideful, 416 never shuts up about doing things the "right way" and revenge for I don't know what. Lucky for us, she's not the leader here~ Regardless of that, she's one hell of a fighter... which means she has to do most of the heavy lifting here haha.</p>
+            
+                                <p>Holds a massive grudge against M16A1 and the AR team in general because reasons. Also, do NOT give her any alcohol, trust me.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img src="../img/polaroid-HK416.webp" alt="A polaroid picture of HK416, taken in a militarized zone">
+                        </div>
+                        
+                        <div  class="text_2nd">                       
+                            <p>I swear I've never seen her smile, what an edgelord~</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+
+                        <div class="doll__mobile">
+                            <div class="text_1st">
+                                <h2>"G11...... Commander, are there enough beds around here?"</h2>
+
+                                <p>The team's marksman and professional sleeper. Lazy, sleepy, trash, deadweight are adjectives that come to mind when describing her, but I don't blame her, she wasn't even designed for combat in the first place. Despite that, she still gives her best to do the bare minimum and she's pretty good at it... Also the team does need a punching bag after all.</p>
+            
+                                <p>416 is her official caretaker and is always yelling at her or smacking her for being lazy, that's why I always pair them. An "immovable object vs unstoppable force" situation haha~</p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img src="../img/polaroid-G11.webp" alt="A polaroid picture of G11, taken in a bedroom">
+                        </div>
+                        
+                        <div  class="text_2nd">                       
+                            <p>404's sleepiest soldier ready for duty! (she fell asleep 5 seconds after i managed to take this picture)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="desc-mobile">
+
+                        <div class="doll__mobile">
+                            <div class="text_1st unknwn">
+                                <h2>"UMP40, making an appearance!"</h2>
+
+                                <p><span class="special">ERROR!###|@@~|€|@#@€@€@#@€¬@</span></p>
+                                <p><span class="special">~|€|@#@€@€@#ERROR!</span></p>
+                                <p><span class="special">ERROR!00000000000000</span></p>
+                                <p><span class="special">ERROR!###|</span></p>
+                                <h2>Commander, I will replace-</h2> 
+                                <p><span class="special">€~€#~€@¬|#¬€~~ERROR!</span></p>
+                                <p><span class="special">ERROR!~55555555555555555</span></p>
+                                <p><span class="special">495495495495ERROR!495495495495</span></p>
+                                <p><span class="special">ERROR!ERROR!ERROR!ERROR!ERROR!</span></p>
+                                <h2>all those outdated girls for you!</h2>
+                                <p><span class="special">////ERROR!!!!!!!!!!!!!!!!</span></p>
+                                <p><span class="special">ERROR!111111010101001</span></p>
+                                <p><span class="special">10101010100ERROR!000000</span></p>
+                            </div>
+                        </div>
+                    
+                        <div class="polaroid">
+                            <img class="broken40" src="../img/ump40.webp" alt="A glitchy, almost broken, image of UMP40">
+                        </div>
+                        
+                        <div  class="text_2nd">                       
+                            <p><span class="special">ACCESS DENIED</span></p>
                         </div>
                     </div>
                 </div>

@@ -34,9 +34,12 @@
 
             .nav__list {
                 display: flex;
+                flex-direction: row;
                 list-style-type: none;
                 gap: 1rem;
-                margin-right: 3rem;
+                padding: 0;
+                // margin-right: 3rem;
+                flex-wrap: wrap;
 
                 @include mobile {
                     flex-direction: column;
@@ -56,7 +59,7 @@
                     font-family: $fuenteTitulo;
                     letter-spacing: 3px;
                     border-bottom: solid thick $colorPrincipal;
-                    padding: 20px 20px 20px 20px;
+                    padding: 1.25rem 1.25rem;
                     font-size: 2rem;
 
                     @include mobile {
@@ -65,21 +68,7 @@
                         font-size: 1.4rem;
                         padding: 0.5rem;  
                     }
-                }
-                
-                .cambiar__idioma.mobile {
-                    display: none;
-
-                    @include mobile {
-                        display: block;
-                        font-size: 1.8rem;
-                        background-color: transparent;
-                        border: 0;
-                        padding: 0.5rem;
-                        cursor: pointer;
-                        color: white; 
-                    }
-                }    
+                } 
             }
         } 
 
@@ -88,7 +77,7 @@
         @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
     
         .logo {
-            max-width: 15rem;
+            width: 15rem;
         }
 
         .hero__nav.visible {
@@ -126,9 +115,9 @@
             font-size: 2rem;
             background-color: transparent;
             border: 0;
-            padding: 1rem;
-            cursor: pointer;
+            cursor: default;
             color: white;
+            opacity: 0;
     
             @include mobile {
                 display: none;

@@ -1,9 +1,5 @@
 .bootstrap__form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: 
-    "titulo  form  .";
+    @include flex-row;
     padding: 1rem;
 
     @include mobile {
@@ -12,8 +8,8 @@
     }
 
     .form__title {
-        grid-area: titulo;
         z-index: -1;
+        width: 40%;
         
         h1 {
             @include titulo_pag;
@@ -40,14 +36,12 @@
     @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
     .form__bg {
-        grid-area: form;
-        
         background-image: url(../img/black-whiteBG.webp);
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-size: contain;
 
-        padding: 6.5rem 10rem 6.5rem 10rem;
+        padding: 8rem 8rem;
         border: 2px solid white;
         border-radius: 2rem;
         box-shadow: 6px 6px 4px #666;
@@ -66,6 +60,9 @@
             background-color: #19191f;
             padding: 2rem;
             border-radius: 2rem;
+
+            width: 20vw;
+            height: auto;
         }
     }
 }
