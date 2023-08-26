@@ -1,5 +1,6 @@
 .bootstrap__form {
-    @include flex-row;
+    display: flex;
+    flex-direction: row;
     padding: 1rem;
 
     @include mobile {
@@ -9,7 +10,7 @@
 
     .form__title {
         z-index: -1;
-        width: 40%;
+        width: 30%;
         
         h1 {
             @include titulo_pag;
@@ -25,44 +26,65 @@
             font-style: italic;
             line-height: 1.5;
             padding-top: 2rem;
-            width: 80%;
+
+            @media screen and (max-width: 472px) {
+                line-height: 1.3;
+            }
 
             @include spanstyle;
         }
-    }
-
-    .fade-in{animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) 1s both}
-
-    @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
-
-    .form__bg {
-        background-image: url(../img/black-whiteBG.webp);
-        background-position: center;
-        background-repeat: repeat;
-        background-size: contain;
-
-        padding: 8rem 8rem;
-        border: 2px solid white;
-        border-radius: 2rem;
-        box-shadow: 6px 6px 4px #666;
-        margin: 2.3rem 0;
 
         @include mobile {
-            padding: 4rem 8rem 4rem 8rem;
-            // z-index: -1;             // no puedo aplicar esta solucion aqui porque form deja de funcionar
-        }
-
-        .scale-in-center{animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 2s both}
-    
-        @keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
-
-        .form__placement {
-            background-color: #19191f;
-            padding: 2rem;
-            border-radius: 2rem;
-
-            width: 20vw;
-            height: auto;
+            width: auto;
         }
     }
+
+    .scale-in-center{animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 1s both}
+
+    @keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+
+    .formCont {
+        display: inline-block;
+        margin: 7rem 6rem 6rem 6rem;
+
+        @include mobile {
+            margin: 0;
+        }
+
+        .form__placement {
+            @include flex-column;
+    
+            background-image: url(../img/black-whiteBG.webp);
+            background-position: center;
+            background-size: 100%;
+            border-radius: 2rem;
+            border: 2px solid white;
+    
+            padding: 2rem;
+            gap: 1rem;
+            width: 170%;
+            height: auto;
+
+            @include mobile {
+                width: 90vw;
+            }
+    
+            .feedback-input {
+                color:#3c3c3c;
+                font-weight:500;
+                font-size: 1rem;
+                border-radius: 0.5rem;
+                padding: 13px 13px 13px 6px;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+    
+            textarea {
+                height: 150px;
+                line-height: 150%;
+            }
+            
+        }
+    }
+    
 }

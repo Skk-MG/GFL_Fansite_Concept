@@ -26,6 +26,10 @@
 
             h1 {
                 @include titulo_pag;
+                
+                @media screen and (max-width: 472px) {
+                    font-size: 2.5rem;
+                }
             }
 
             @include title_expand;
@@ -34,6 +38,10 @@
                 color: white;
                 font-family: $fuenteTexto;
                 font-size: 2rem;
+
+                @media screen and (max-width: 472px) {
+                    font-size: 1.5rem;
+                }
 
                 @include spanstyle;
             }
@@ -48,7 +56,7 @@
         grid-area: paginas;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas: 
         "gfl gfl"
         "gp  gp"
@@ -143,6 +151,12 @@
                 color: white;
                 font-family: $fuenteTexto;
                 font-size: 1.5rem;
+            }
+        }
+
+        .pagina__externa {
+            @media screen and (max-width: 472px) {
+                flex-direction: column;
             }
         }
     }

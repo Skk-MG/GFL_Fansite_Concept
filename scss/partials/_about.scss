@@ -1,0 +1,78 @@
+.gridAbt {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    " abt ."
+    " .  sign";
+    padding: 1rem;
+    color: white;
+
+    @media screen and (max-width: 1000px) {
+        @include flex-column;
+    }
+
+    @include mobile {
+        @include flex-column;
+    }
+
+    .extraInfo {
+        grid-area: abt;
+        @include flex-column;
+        // width: 50%;
+        
+        .tituloAbt {
+            @include titulo_pag;
+        }
+
+        .abtMe {
+            font-family: $fuenteTexto;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .vanitas {
+            font-family: $fuenteTitulo;
+            color: $colorSecundario;
+        }
+
+        @include spanstyle;
+    }
+
+    .lastmsg {
+        grid-area: sign;
+        @include flex-column;
+        align-items: center;
+        gap: 1rem;
+
+        .rotate-center{animation:rotate-center 20s ease-out infinite both}
+
+        @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+        .ribb {
+            width: 40%;
+            height: auto;
+
+            @media screen and (max-width: 1000px) {
+                width: 30%;
+            }
+        }
+
+        p {
+            font-family: $fuenteTexto;
+            color: $colorTerciario;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            @include mobile {
+                background-color: #000000;
+                border: 2px solid $colorTerciario;
+                border-radius: 1rem;
+                padding: 0.2rem;
+                text-align: center;
+            }
+        }
+    }
+}

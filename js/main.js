@@ -111,13 +111,11 @@ const dollUMP45 = document.querySelector("#dollUMP45");
 const dollUMP9 = document.querySelector("#dollUMP9");            
 const doll416 = document.querySelector("#doll416");
 const dollG11 = document.querySelector("#dollG11");
-const doll40 = document.querySelector("#doll40");
 
 const UMP45desc = document.querySelector("#desc1_45");
 const UMP9desc = document.querySelector("#desc2_9");
 const HK416desc = document.querySelector("#desc3_416");
 const G11desc = document.querySelector("#desc4_11");
-const unkwndesc = document.querySelector("#desc5_40");
 
 dollUMP45.addEventListener("click", () => { 
     UMP45desc.classList.add("visible");
@@ -125,7 +123,6 @@ dollUMP45.addEventListener("click", () => {
     UMP9desc.classList.remove("visible");
     HK416desc.classList.remove("visible");
     G11desc.classList.remove("visible");
-    unkwndesc.classList.remove("visible");
 })
 
 dollUMP9.addEventListener("click", () => {
@@ -133,7 +130,6 @@ dollUMP9.addEventListener("click", () => {
     UMP9desc.classList.add("visible");
     HK416desc.classList.remove("visible");
     G11desc.classList.remove("visible");
-    unkwndesc.classList.remove("visible");
 })
 
 doll416.addEventListener("click", () => {
@@ -141,7 +137,6 @@ doll416.addEventListener("click", () => {
     UMP9desc.classList.remove("visible");
     HK416desc.classList.add("visible");
     G11desc.classList.remove("visible");
-    unkwndesc.classList.remove("visible");
 })
 
 dollG11.addEventListener("click", () => {
@@ -149,14 +144,4 @@ dollG11.addEventListener("click", () => {
     UMP9desc.classList.remove("visible");
     HK416desc.classList.remove("visible");
     G11desc.classList.add("visible");
-    unkwndesc.classList.remove("visible");
 })
-
-doll40.addEventListener("click", () => {
-    UMP45desc.classList.add("woosh");
-    UMP9desc.classList.remove("visible");
-    HK416desc.classList.remove("visible");
-    G11desc.classList.remove("visible");
-    unkwndesc.classList.add("visible");
-})
-

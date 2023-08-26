@@ -7,10 +7,11 @@
         align-items: center;
         padding: 1rem;
         padding-bottom: 0.5rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         @include mobile {
             display: flex;
+            justify-content: space-between;
             flex-direction: row;    
             width: 100%;     
         }
@@ -58,9 +59,14 @@
                 .menu__item {
                     font-family: $fuenteTitulo;
                     letter-spacing: 3px;
-                    border-bottom: solid thick $colorPrincipal;
+                    border-bottom: 4px solid $colorPrincipal;
                     padding: 1.25rem 1.25rem;
                     font-size: 2rem;
+
+                    @media screen and (max-width: 1260px) {
+                        padding: 1rem 1rem;
+                        font-size: 1.5rem;
+                    }
 
                     @include mobile {
                         letter-spacing: 2px;
@@ -68,7 +74,7 @@
                         font-size: 1.4rem;
                         padding: 0.5rem;  
                     }
-                } 
+                }
             }
         } 
 
@@ -77,7 +83,8 @@
         @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
     
         .logo {
-            width: 15rem;
+            max-width:100%;
+            height:auto;
         }
 
         .hero__nav.visible {
@@ -108,19 +115,6 @@
         .cerrar__menu {
             @include mobile {
                 border: none;
-            }
-        }
-            
-        .cambiar__idioma {
-            font-size: 2rem;
-            background-color: transparent;
-            border: 0;
-            cursor: default;
-            color: white;
-            opacity: 0;
-    
-            @include mobile {
-                display: none;
             }
         }
     }
